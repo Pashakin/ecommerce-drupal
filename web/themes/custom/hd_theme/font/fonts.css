@@ -1,0 +1,36 @@
+@import url("https://fonts.googleapis.com/css2?family=Send+Flowers&display=swap");
+
+@font-face {
+  font-family: "Babylonica", cursive;
+  src: url("fonts/Babylonica-Regular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Rubik Glitch", cursive;
+  src: url("fonts/RubikGlitch-Regular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 400;
+}
+
+html {
+  font-size: 16px;
+}
+
+.via-html {
+  font-family: "Rubik Puddles", cursive;
+}
+
+.via-css {
+  font-family: "Send Flowers", cursive;
+}
+
+.as-file {
+  font-family: "Rubik Glitch", cursive;
+}
+
+.adaptive {
+  font-family: "Babylonica", cursive;
+  font-size: calc(1.5rem + 12 * ((100vw - 20rem) / (1024 - 320)));
+}
