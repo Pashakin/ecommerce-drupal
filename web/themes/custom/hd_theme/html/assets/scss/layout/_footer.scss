@@ -3,7 +3,7 @@ footer {
 }
 
 .footer {
-  min-height: 410px;
+  // min-height: 410px;
   display: grid;
   grid-template-columns: 1fr 200px 1fr;
   grid-template-rows: repeat(3, auto);
@@ -12,7 +12,7 @@ footer {
     "social social social"
     "privacy privacy privacy";
   align-items: end;
-  align-content: center;
+  // align-content: center;
   padding: 95px 0 35px;
 
   &__menu-left {
@@ -39,9 +39,17 @@ footer {
     margin-top: 55px;
 
     .menu-item {
+      display: flex;
+      align-items: center;
+      justify-content: center;
       margin: 0 10px;
+      background-color: $footer-text;
+      height: 40px;
+      width: 40px;
+      border-radius: 50%;
 
       a:before {
+        color: $main-bg;
         font-size: 23px;
       }
     }
