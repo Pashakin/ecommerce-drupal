@@ -61,7 +61,9 @@
         "classmap": [
             "scripts/composer/ScriptHandler.php"
         ],
-        "files": ["load.environment.php"]
+        "files": [
+            "load.environment.php"
+        ]
     },
     "scripts": {
         "pre-install-cmd": [
@@ -84,18 +86,29 @@
             }
         },
         "installer-paths": {
-            "web/core": ["type:drupal-core"],
-            "web/libraries/{$name}": ["type:drupal-library"],
-            "web/modules/contrib/{$name}": ["type:drupal-module"],
-            "web/profiles/contrib/{$name}": ["type:drupal-profile"],
-            "web/themes/contrib/{$name}": ["type:drupal-theme"],
-            "drush/Commands/contrib/{$name}": ["type:drupal-drush"]
+            "web/core": [
+                "type:drupal-core"
+            ],
+            "web/libraries/{$name}": [
+                "type:drupal-library"
+            ],
+            "web/modules/contrib/{$name}": [
+                "type:drupal-module"
+            ],
+            "web/profiles/contrib/{$name}": [
+                "type:drupal-profile"
+            ],
+            "web/themes/contrib/{$name}": [
+                "type:drupal-theme"
+            ],
+            "drush/Commands/contrib/{$name}": [
+                "type:drupal-drush"
+            ]
         },
         "composer-exit-on-patch-failure": true,
         "patchLevel": {
             "drupal/core": "-p2"
         },
-        "patches": {
-        }
+        "patches": {}
     }
 }
