@@ -1,0 +1,38 @@
+header {
+  background-color: $main-bg;
+
+  .region-header {
+    min-height: 64px;
+    display: grid;
+    grid-template-columns: 200px 10fr 80px 80px 80px;
+    grid-template-rows: 1fr;
+    align-items: center;
+
+    .main-menu {
+      display: flex;
+      justify-content: center;
+
+      &__item {
+        margin: 0 23px;
+        text-transform: uppercase;
+        @include font-setting(normal, 400, 18px, 21px);
+      }
+    }
+
+    .header-cart,
+    .header-account,
+    .header-search {
+      display: flex;
+      justify-content: flex-end;
+    }
+
+    a,
+    a::before {
+      color: $main-text;
+    }
+
+    img {
+      max-width: 100%;
+    }
+  }
+}

@@ -1,7 +1,9 @@
 @import "helpers/variables";
 @import "helpers/mixins";
 
+@import "layout/fonts";
 @import "layout/zero";
+@import "layout/header";
 @import "layout/footer";
 
 html {
