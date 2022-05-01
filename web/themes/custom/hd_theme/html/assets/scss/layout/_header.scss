@@ -1,5 +1,5 @@
 header {
-  background-color: $main-bg;
+  background-color: $bg-heading;
 
   .region-header {
     min-height: 64px;
@@ -28,7 +28,7 @@ header {
 
     a,
     a::before {
-      color: $main-text;
+      color: $text;
     }
 
     img {

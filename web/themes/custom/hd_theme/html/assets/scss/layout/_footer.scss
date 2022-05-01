@@ -1,5 +1,5 @@
 footer {
-  background-color: $main-bg;
+  background-color: $bg-heading;
 }
 
 .footer {
@@ -34,7 +34,7 @@ footer {
 
   &__menu-social {
     grid-area: social;
-    border-top: 1px solid $main-text;
+    border-top: 1px solid $text;
     padding-top: 55px;
     margin-top: 55px;
 
@@ -43,13 +43,13 @@ footer {
       align-items: center;
       justify-content: center;
       margin: 0 10px;
-      background-color: $main-text;
+      background-color: $text;
       height: 40px;
       width: 40px;
       border-radius: 50%;
 
       a:before {
-        color: $main-bg;
+        color: $bg-heading;
         font-size: 23px;
       }
     }
@@ -59,7 +59,7 @@ footer {
     grid-area: privacy;
     display: flex;
     justify-content: center;
-    color: $main-text;
+    color: $text;
     margin-top: 72px;
     @include font-setting(normal, 400, 14px, 20px);
 
@@ -78,7 +78,7 @@ footer {
   }
 
   a {
-    color: $main-text;
+    color: $text;
   }
 }
 
