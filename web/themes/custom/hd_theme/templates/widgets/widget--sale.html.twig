@@ -1,0 +1,13 @@
+<div{{ attributes.addClass('widget widget-sale') }}>
+  {% if content %}
+    <a href="{{ content.field_link.0['#url'] }}" class="widget-sale__link">
+      <div class="widget-sale__left">
+        {{ content.field_image }}
+      </div>
+      <div class="widget-sale__right">
+        {{ content.field_text }}
+        {{ content.field_sale }}
+      </div>
+    </a>
+  {% endif %}
+</div>
