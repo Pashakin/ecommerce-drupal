@@ -1,11 +1,46 @@
-body {
+main {
   .region-content {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    #user-login-form {
+    height: 50vh;
 
+    .user-login-form {
+      input {
+        height: 30px;
+        border-radius: 5px;
+      }
+
+      .form-item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 10px;
+
+        label {
+          display: inline-block;
+          font-weight: 500;
+        }
+
+        input.form-text {
+          width: 85%;
+          border: 1px solid #f2f2f2;
+          padding: 5px;
+        }
+      }
+
+      .form-actions {
+        display: flex;
+        justify-content: center;
+
+        input.form-submit {
+          width: 30%;
+          text-align: center;
+          background-color: #f2f2f2;
+          font-weight: 500;
+        }
+      }
     }
   }
 }
