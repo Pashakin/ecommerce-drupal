@@ -3,13 +3,111 @@
     max-width: 100%;
     height: auto;
   }
+
+  .field--name-field-text,
+  .field--name-field-sale,
+  .field--name-name {
+    @include font-setting(normal, 500, 48px, 56px);
+    color: $bg-heading;
+  }
+
+  .field--name-field-title,
+  .views-field-title {
+    @include font-setting(normal, 400, 28px, 33px);
+    color: $bg-heading;
+  }
+
+  .field--name-field-description,
+  .views-field-body {
+    @include font-setting(normal, 400, 18px, 25px);
+    color: $bg-heading;
+  }
+}
+
+.widget-inspiration .field--name-field-link,
+.widget-block .views-field-view-commerce-product {
+  @include font-setting(normal, 500, 20px, 23px);
+
+  a {
+    color: $bg-heading;
+    text-decoration: underline;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
+
+// Offer widget
+.widget-offer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 52px 0;
+
+  &__title {
+    max-width: 787px;
+  }
+
+  &__description {
+    max-width: 506px;
+    margin: 32px 0 24px;
+  }
+
+  &__button {
+    @include font-setting(normal, 400, 24px, 60px);
+
+    a {
+      width: 240px;
+      height: 60px;
+    }
+  }
+}
+
+// Inspiration widget
+.widget-inspiration {
+  .field--name-name {
+    margin: 52px 0 50px;
+  }
+
+  .field--name-field-items {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+
+    .field--name-field-title {
+      margin: 24px 0;
+    }
+  }
+}
+
+// Block widget
+.widget-block {
+  .field--name-name {
+    margin: 52px 0 58px;
+  }
+
+  .view-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 0 40px;
+
+    .views-field-title {
+      margin: 24px 0;
+    }
+
+    .views-field-body {
+      margin-bottom: 24px;
+    }
+  }
 }
 
 // Sale widget
 .widget-sale {
   width: 100%;
   max-height: 724px;
-  margin-bottom: 52px;
+  margin: 100px 0 52px;
   background-color: #c4c4c4;
 
   &__link {
@@ -25,50 +123,13 @@
     width: 34.375%;
     text-align: center;
 
-    .field--name-field-text,
-    .field--name-field-sale {
-      @include font-setting(normal, 500, 48px, 56px);
-    }
-
     .field--name-field-text {
       text-transform: uppercase;
-      color: $bg-heading;
       margin-bottom: 20px;
     }
 
     .field--name-field-sale {
       color: $link-price;
-    }
-  }
-}
-
-// Offer widget
-.widget-offer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  padding: 52px 0;
-
-  &__title {
-    max-width: 787px;
-    @include font-setting(normal, 500, 48px, 56px);
-    color: $bg-heading;
-  }
-
-  &__description {
-    max-width: 506px;
-    @include font-setting(normal, 400, 18px, 25px);
-    color: $bg-heading;
-    margin: 32px auto 24px;
-  }
-
-  &__button {
-    @include font-setting(normal, 400, 24px, 60px);
-
-    a {
-      width: 240px;
-      height: 60px;
     }
   }
 }

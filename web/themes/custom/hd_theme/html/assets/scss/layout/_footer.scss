@@ -1,5 +1,6 @@
 footer {
   background-color: $bg-heading;
+  padding: 95px 0 35px;
 }
 
 .footer {
@@ -13,7 +14,6 @@ footer {
     "privacy privacy privacy";
   align-items: end;
   // align-content: center;
-  padding: 95px 0 35px;
 
   &__menu-left {
     grid-area: menu-left;

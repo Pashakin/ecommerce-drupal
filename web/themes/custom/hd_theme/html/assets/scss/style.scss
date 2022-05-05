@@ -17,12 +17,16 @@ html {
   flex-direction: column;
   justify-content: space-between;
   height: 100vh;
-  overflow-x: hidden;
+}
+
+.content-overflow {
+  overflow: hidden;
 }
 
 .container {
   max-width: 1280px;
   margin: 0 auto;
+  padding: 0 10px;
 }
 
 .main-btn {
