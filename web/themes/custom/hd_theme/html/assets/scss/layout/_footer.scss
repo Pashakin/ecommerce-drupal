@@ -44,11 +44,18 @@ footer {
       background-color: $text;
       height: 40px;
       width: 40px;
+      @media (max-width: 1280px) {
+        height: adaptive-value(40, 34);
+        width: adaptive-value(40, 34);
+      }
       border-radius: 50%;
 
       a:before {
         color: $bg-heading;
         font-size: 23px;
+        @media (max-width: 1280px) {
+          font-size: adaptive-value(23, 18);
+        }
       }
     }
   }
