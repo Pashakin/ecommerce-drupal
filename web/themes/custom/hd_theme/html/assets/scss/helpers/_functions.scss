@@ -1,5 +1,7 @@
 @function adaptive-value($startSize, $minSize) {
   $addSize: $startSize - $minSize;
-  $value: calc(#{$minSize + px} + $addSize * ((100vw - 320px) / (1280 - 320)));
+  $value: calc(
+    #{$minSize + px} + #{$addSize} * ((100vw - 320px) / (1280 - 320))
+  );
   @return $value;
 }

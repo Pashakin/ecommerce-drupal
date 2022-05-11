@@ -16,6 +16,10 @@ header {
         margin: 0 2.718%;
         text-transform: uppercase;
         @include font-setting(normal, 400, 18px, 21px);
+        @media (max-width: 1280px) {
+          font-size: adaptive-value(18, 16);
+          line-height: adaptive-value(21, 19);
+        }
       }
     }
 
