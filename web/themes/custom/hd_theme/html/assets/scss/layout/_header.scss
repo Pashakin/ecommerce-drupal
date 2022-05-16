@@ -83,28 +83,55 @@ header {
         span {
           display: block;
           position: relative;
-          @include burger-icon;
+          width: 25px;
+          height: 2px;
+          background-color: $text;
 
           &::before,
           &::after {
-            @include burger-icon;
             content: "";
             position: absolute;
+            width: 12.5px;
+            height: 2px;
+            background-color: $text;
+            transition: 0.4s;
           }
 
           &::before {
-            margin-top: -7px;
+            transform: translateY(-8px);
           }
 
           &::after {
-            margin-top: 7px;
+            transform: translateY(8px);
+            margin-left: 12.5px;
+          }
+        }
+
+        &_active {
+          span {
+            height: 0;
+
+            &::before,
+            &::after {
+              width: 25px;
+            }
+
+            &::before {
+              transform: rotate(45deg);
+            }
+
+            &::after {
+              transform: rotate(-45deg);
+              margin-left: unset;
+            }
           }
         }
       }
 
       &__navigation-menu {
         grid-area: navigation;
-        display: none;
+        height: 0;
+        overflow: hidden;
 
         .main-menu {
           flex-direction: column;
@@ -114,6 +141,10 @@ header {
           &__item {
             margin: 5px 0;
           }
+        }
+
+        &_active {
+          height: auto;
         }
       }
     }
