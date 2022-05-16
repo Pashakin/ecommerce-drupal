@@ -5,7 +5,6 @@ dependencies:
   config:
     - field.storage.commerce_product.body
     - field.storage.commerce_product.field_img_to_card
-    - image.style.medium
   module:
     - commerce_product
     - image
@@ -79,7 +78,7 @@ display:
           type: image
           settings:
             image_link: ''
-            image_style: medium
+            image_style: ''
           group_column: ''
           group_columns: {  }
           group_rows: true

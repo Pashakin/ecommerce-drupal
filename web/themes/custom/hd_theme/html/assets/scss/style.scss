@@ -1,21 +1,19 @@
 @import "helpers/variables";
 @import "helpers/functions";
 @import "helpers/mixins";
+@import "helpers/zero";
 
-@import "layout/fonts";
-@import "layout/zero";
+@import "components/fonts";
+@import "components/widgets";
+
 @import "layout/header";
 @import "layout/footer";
+@import "layout/blog";
 
-@import "components/widgets";
+@import "pages/blogs";
 
 html {
   font-family: "Roboto", sans-serif;
-  font-size: 62.5%;
-}
-
-body {
-  font-size: inherit;
 }
 
 .layout-container {

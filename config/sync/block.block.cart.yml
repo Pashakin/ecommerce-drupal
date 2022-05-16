@@ -3,9 +3,13 @@ langcode: en
 status: true
 dependencies:
   module:
+    - block_class
     - commerce_cart
   theme:
     - hd_theme
+third_party_settings:
+  block_class:
+    classes: region-header__cart
 id: cart
 theme: hd_theme
 region: header
