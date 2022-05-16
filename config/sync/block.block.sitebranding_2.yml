@@ -3,9 +3,13 @@ langcode: en
 status: true
 dependencies:
   module:
+    - block_class
     - system
   theme:
     - hd_theme
+third_party_settings:
+  block_class:
+    classes: region-header__branding
 id: sitebranding_2
 theme: hd_theme
 region: header

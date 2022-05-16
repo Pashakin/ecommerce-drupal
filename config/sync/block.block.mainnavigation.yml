@@ -5,9 +5,13 @@ dependencies:
   config:
     - system.menu.main
   module:
+    - block_class
     - system
   theme:
     - hd_theme
+third_party_settings:
+  block_class:
+    classes: region-header__navigation-menu
 id: mainnavigation
 theme: hd_theme
 region: header
