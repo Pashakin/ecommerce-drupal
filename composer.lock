@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "0ec962b4c7af08647550418418241700",
+    "content-hash": "3a3b066a6bb3e8c0e2ca7f9524fb4b3c",
     "packages": [
         {
             "name": "ajgl/breakpoint-twig-extension",
@@ -3942,6 +3942,58 @@
             }
         },
         {
+            "name": "drupal/themable_forms",
+            "version": "1.0.0-beta2",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/themable_forms.git",
+                "reference": "8.x-1.0-beta2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/themable_forms-8.x-1.0-beta2.zip",
+                "reference": "8.x-1.0-beta2",
+                "shasum": "5834a7615682f62a2bc9eb9c46dfbc55833aaac0"
+            },
+            "require": {
+                "drupal/core": "^8 || ^9"
+            },
+            "require-dev": {
+                "dealerdirect/phpcodesniffer-composer-installer": "^0.7.1",
+                "drupal/coder": "^8.3"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-1.0-beta2",
+                    "datestamp": "1612276954",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Project has not opted into security advisory coverage!"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Ruuds",
+                    "homepage": "https://www.drupal.org/user/3074673"
+                },
+                {
+                    "name": "lauriii",
+                    "homepage": "https://www.drupal.org/user/1078742"
+                }
+            ],
+            "description": "This module adds some helpful theme suggestions for form elements.",
+            "homepage": "https://www.drupal.org/project/themable_forms",
+            "support": {
+                "source": "https://git.drupalcode.org/project/themable_forms"
+            }
+        },
+        {
             "name": "drupal/token",
             "version": "1.10.0",
             "source": {
@@ -4523,6 +4575,15 @@
                 "source": "https://github.com/enlightn/security-checker/tree/v1.10.0"
             },
             "time": "2022-02-21T22:40:16+00:00"
+        },
+        {
+            "name": "fancyapps/fancybox",
+            "version": "4.1.2",
+            "dist": {
+                "type": "zip",
+                "url": "https://github.com/fancyapps/ui/archive/refs/heads/main.zip"
+            },
+            "type": "drupal-library"
         },
         {
             "name": "graham-campbell/result-type",
@@ -5528,6 +5589,58 @@
                 "source": "https://github.com/nikic/PHP-Parser/tree/v4.13.2"
             },
             "time": "2021-11-30T19:35:32+00:00"
+        },
+        {
+            "name": "nolimits4web/swiper",
+            "version": "v4.5.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/nolimits4web/swiper.git",
+                "reference": "2b05891cdc2aa427f5697fa747680d1280dc4379"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/nolimits4web/swiper/zipball/2b05891cdc2aa427f5697fa747680d1280dc4379",
+                "reference": "2b05891cdc2aa427f5697fa747680d1280dc4379",
+                "shasum": ""
+            },
+            "type": "library",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Vladimir Kharalmpidi",
+                    "email": "nolimits4web@gmail.com",
+                    "homepage": "https://idangero.us",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Most modern mobile touch slider and framework with hardware accelerated transitions",
+            "homepage": "http://www.idangero.us/swiper/",
+            "keywords": [
+                "app",
+                "carousel",
+                "cordova",
+                "framework",
+                "framework7",
+                "gallery",
+                "ios",
+                "mobile",
+                "phonegap",
+                "plugin",
+                "slider",
+                "swipe",
+                "swiper",
+                "touch"
+            ],
+            "support": {
+                "docs": "http://idangero.us/swiper/api/",
+                "issues": "https://github.com/nolimits4web/swiper/issues",
+                "source": "https://github.com/nolimits4web/swiper.git"
+            },
+            "time": "2019-10-16T11:51:47+00:00"
         },
         {
             "name": "pear/archive_tar",
@@ -12962,7 +13075,8 @@
     "minimum-stability": "dev",
     "stability-flags": {
         "drupal/block_field": 5,
-        "drupal/starrating": 15
+        "drupal/starrating": 15,
+        "drupal/themable_forms": 10
     },
     "prefer-stable": true,
     "prefer-lowest": false,
