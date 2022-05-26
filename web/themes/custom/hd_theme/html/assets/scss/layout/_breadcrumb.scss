@@ -1,0 +1,30 @@
+.breadcrumb {
+  @include font-setting(normal, 400, 14px, 16px);
+  margin-top: 33px;
+
+  &__arrow {
+    margin: 0 10px;
+  }
+
+  ul {
+    display: flex;
+
+    li {
+      &:first-child {
+        text-transform: uppercase;
+      }
+
+      &:last-child {
+        color: #999999;
+      }
+
+      a {
+        color: $bg-heading;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
