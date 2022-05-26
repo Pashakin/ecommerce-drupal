@@ -1,37 +1,37 @@
-<div class="product-wrapper container">
+<div class="product-wrapper">
   <div class="product">
-  <div class="product__variation-title">
-    {{ product.variation_title }}
-  </div>
-  <div class="product__rating">
-    {{ product.field_rating }}
-  </div>
-  <div class="product__images">
-    <div class="slider-for">
-    {{ product.variation_field_image }}
+    <div class="product__variation-title">
+      {{ product.variation_title }}
     </div>
-    <div class="slider-nav">
-    {{ product.variation_field_image }}
+    <div class="product__rating">
+      {{ product.field_rating }}
     </div>
-  </div>
-  <div class="product__variation">
-    <div class="product__variation-header">
-      <div class="product__variation-body">
-        {{ product.body }}
+    <div class="product__images">
+      <div class="slider-for">
+        {{ product.variation_field_image }}
       </div>
-      <div class="product__variation-price">
-        {{ product.variation_price }}
+      <div class="slider-nav">
+        {{ product.variation_field_image }}
       </div>
     </div>
-    <div class="form-cart">
-      {{ product.variations }}
+    <div class="product__variation variation">
+      <div class="variation__summary">
+        <div class="variation__description">
+          {{ product.body }}
+        </div>
+        <div class="variation__price">
+          {{ product.variation_price }}
+        </div>
+      </div>
+      <div class="variation__form-cart">
+        {{ product.variations }}
+      </div>
+      <div class="variation__tabs">
+        {{ product.field_tabs }}
+      </div>
     </div>
-    <div class="product-tabs">
-    {{ product.field_tabs }}
+    <div class="product__similar-products similar-products">
+      {{ product.field_similar_products }}
     </div>
-  </div>
-  <div class="product__similar-products">
-    {{ product.field_similar_products }}
-  </div>
   </div>
 </div>
