@@ -4859,15 +4859,6 @@
             "type": "drupal-library"
         },
         {
-            "name": "fancyapps/fancybox",
-            "version": "4.1.2",
-            "dist": {
-                "type": "zip",
-                "url": "https://github.com/fancyapps/ui/archive/refs/heads/main.zip"
-            },
-            "type": "drupal-library"
-        },
-        {
             "name": "furf/jquery-ui-touch-punch",
             "version": "dev-master",
             "dist": {
