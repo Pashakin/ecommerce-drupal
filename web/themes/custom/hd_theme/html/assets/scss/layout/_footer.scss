@@ -6,7 +6,6 @@ footer {
 .footer {
   display: grid;
   grid-template-columns: 1fr 15.874% 1fr;
-  grid-template-rows: repeat(3, auto);
   grid-template-areas:
     "menu-left logo menu-right"
     "social social social"
@@ -99,7 +98,6 @@ footer {
 
   .footer {
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(4, auto);
     grid-template-areas:
       "logo logo"
       "menu-left menu-right"

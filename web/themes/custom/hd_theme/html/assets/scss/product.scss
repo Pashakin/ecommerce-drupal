@@ -27,6 +27,9 @@
       "images variation"
       "similar-products similar-products";
     column-gap: 40px;
+    @media (max-width: 1280px) {
+      column-gap: adaptive-value(40, 15);
+    }
 
     &__variation-title {
       grid-area: variation-title;
@@ -48,12 +51,18 @@
 
       .slider-for {
         margin-bottom: 21px;
+        @media (max-width: 1280px) {
+          margin-bottom: adaptive-value(21, 10);
+        }
 
         .slick-slide {
           div {
             height: 408px;
+            @media (max-width: 1280px) {
+              height: adaptive-value(408, 204);
+            }
             overflow: hidden;
-            cursor: zoom-in;
+            cursor: pointer;
           }
         }
       }
@@ -61,10 +70,17 @@
       .slider-nav {
         .slick-slide {
           margin: 0 28.5px;
+          @media (max-width: 1280px) {
+            margin: 0 adaptive-value(28.5, 14.25);
+          }
 
           div {
             height: 159px;
             width: 154px;
+            @media (max-width: 1280px) {
+              height: adaptive-value(159, 79.5);
+              width: adaptive-value(154, 77);
+            }
             cursor: move;
           }
         }
@@ -77,8 +93,6 @@
 
     &__similar-products {
       grid-area: similar-products;
-      display: flex;
-      flex-direction: column;
     }
   }
 
@@ -93,6 +107,10 @@
 
     &__price {
       @include font-setting(normal, 700, 20px, 23px);
+      @media (max-width: 1280px) {
+        font-size: adaptive-value(20, 16);
+        line-height: adaptive-value(23, 19);
+      }
       color: $link-price;
       margin-left: 22px;
     }
@@ -102,6 +120,10 @@
       border-bottom: 1px solid #999999;
       margin: 25px 0;
       padding: 25px 0;
+      @media (max-width: 1280px) {
+        margin: adaptive-value(25, 15) 0;
+        padding: adaptive-value(25, 15) 0;
+      }
 
       fieldset {
         position: relative;
@@ -189,18 +211,13 @@
     }
 
     &__tabs-content {
-      position: relative;
-
       .field-content__item {
-        position: absolute;
-        top: 0;
-        left: 0;
-        visibility: hidden;
+        display: none;
         padding-bottom: 20px;
         border-bottom: 1px solid #999999;
 
         &_active {
-          visibility: visible;
+          display: block;
         }
       }
     }
@@ -213,17 +230,29 @@
       text-align: center;
       @include font-setting(normal, 500, 48px, 56px);
       margin: 89px 0 58px;
+      @media (max-width: 1280px) {
+        font-size: adaptive-value(48, 24);
+        line-height: adaptive-value(56, 28);
+        margin-top: adaptive-value(89, 25);
+        margin-bottom: adaptive-value(58, 20);
+      }
     }
 
     &__items {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
-      column-gap: 40px;
+      gap: 40px;
+      @media (max-width: 1280px) {
+        gap: adaptive-value(40, 15);
+      }
     }
 
     &__image {
       .field--name-field-image-to-card {
         height: 442px;
+        @media (max-width: 1280px) {
+          height: adaptive-value(442, 221);
+        }
       }
     }
 
@@ -232,6 +261,11 @@
       justify-content: space-between;
       @include font-setting(normal, 700, 20px, 23px);
       margin: 28px 0;
+      @media (max-width: 1280px) {
+        font-size: adaptive-value(20, 16);
+        line-height: adaptive-value(23, 19);
+        margin: adaptive-value(28, 14) 0;
+      }
     }
 
     &__price {
@@ -241,11 +275,18 @@
 
     &__body {
       @include font-setting(normal, 400, 18px, 25px);
+      @media (max-width: 1280px) {
+        font-size: adaptive-value(18, 14);
+        line-height: adaptive-value(25, 21);
+      }
     }
 
     &__link {
       @include font-setting(normal, 400, 16px, 19px);
       margin-top: 27px;
+      @media (max-width: 1280px) {
+        margin-top: adaptive-value(27, 14);
+      }
 
       a {
         color: $bg-heading;
@@ -254,6 +295,48 @@
         &:hover {
           text-decoration: none;
         }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .product-wrapper {
+    .product {
+      grid-template-columns: 50% 1fr;
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .product-wrapper {
+    .product {
+      grid-template-columns: 100%;
+      grid-template-areas:
+        "variation-title"
+        "rating"
+        "images"
+        "variation"
+        "similar-products";
+
+      &__images {
+        margin-bottom: 20px;
+      }
+    }
+
+    .similar-products {
+      &__items {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .product-wrapper {
+    .similar-products {
+      &__items {
+        grid-template-columns: 1fr;
       }
     }
   }
