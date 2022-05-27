@@ -1,4 +1,4 @@
-uuid: 1650a1eb-d509-4ce9-bb62-7a09d46fdf64
+uuid: 744b4935-2a76-46a4-888d-2366149cb5c8
 langcode: en
 status: true
 dependencies:
@@ -9,13 +9,13 @@ dependencies:
 id: tabs
 theme: hd_theme
 region: content
-weight: -6
+weight: -7
 provider: null
 plugin: local_tasks_block
 settings:
   id: local_tasks_block
   label: Tabs
-  label_display: '0'
+  label_display: "0"
   provider: core
   primary: true
   secondary: true

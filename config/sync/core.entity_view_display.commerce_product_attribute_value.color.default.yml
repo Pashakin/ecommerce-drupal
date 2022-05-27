@@ -17,11 +17,11 @@ content:
     label: hidden
     settings:
       shape: circle
-      width: '20'
-      height: '20'
+      width: "20"
+      height: "20"
       opacity: true
       data_attribute: false
-    third_party_settings: {  }
+    third_party_settings: {}
     weight: 1
     region: content
   name:
@@ -29,7 +29,9 @@ content:
     label: hidden
     settings:
       link_to_entity: false
-    third_party_settings: {  }
+    third_party_settings: {}
     weight: 0
     region: content
-hidden: {  }
+hidden:
+  langcode: true
+  search_api_excerpt: true

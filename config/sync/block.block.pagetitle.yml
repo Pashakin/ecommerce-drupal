@@ -1,4 +1,4 @@
-uuid: a85e6359-9e2d-4aed-a77d-0270738b95e9
+uuid: 367dd322-9195-4e5f-9b89-0fdade45e241
 langcode: en
 status: true
 dependencies:
@@ -9,13 +9,13 @@ dependencies:
 id: pagetitle
 theme: hd_theme
 region: content
-weight: -7
+weight: -8
 provider: null
 plugin: page_title_block
 settings:
   id: page_title_block
-  label: 'Page title'
-  label_display: '0'
+  label: "Page title"
+  label_display: "0"
   provider: core
 visibility:
   request_path:
