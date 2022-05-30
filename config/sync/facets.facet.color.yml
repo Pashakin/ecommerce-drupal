@@ -1,4 +1,4 @@
-uuid: 11c9d1ab-0fd3-44dd-ad08-a8965175e247
+uuid: 5c681c88-4b5a-493e-b287-a35917bf51e3
 langcode: en
 status: true
 dependencies:
@@ -8,7 +8,7 @@ dependencies:
   module:
     - search_api
 id: color
-name: Color
+name: 'Color » Product attribute value » Color'
 weight: 0
 min_count: 1
 url_alias: color

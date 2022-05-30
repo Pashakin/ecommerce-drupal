@@ -1,0 +1,144 @@
+.shop-page {
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  &__content {
+    display: grid;
+    grid-template-columns: 310px 1fr;
+    margin: 34px 0 76px;
+
+    .container {
+      max-width: unset;
+      margin: unset;
+      padding: unset;
+    }
+
+    .region-left-sitebar {
+      border-right: 1px solid #c4c4c4;
+      padding-right: 29px;
+
+      .filter-title,
+      .filter-price,
+      .filter-category,
+      .filter-color,
+      .filter-rating {
+        color: $bg-heading;
+        border-bottom: 1px solid #c4c4c4;
+
+        h2 {
+          @include font-setting(normal, 400, 18px, 21px);
+          margin-bottom: 27px;
+        }
+      }
+
+      .filter-price,
+      .filter-category,
+      .filter-color,
+      .filter-rating {
+        padding: 27px 0;
+        @include font-setting(normal, 400, 16px, 19px);
+      }
+
+      .filter-price {
+        .facets-widget-range_slider {
+          margin: 0 17px;
+        }
+      }
+
+      .filter-color {
+        .facets-widget-links {
+          ul {
+            display: flex;
+
+            .facet-item__value {
+              width: 20px;
+              height: 20px;
+              display: block;
+              margin-right: 6px;
+              border-radius: 50%;
+              box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+                0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            }
+
+            .facet-item__active {
+              position: relative;
+
+              &::after {
+                position: absolute;
+                bottom: -5px;
+                display: block;
+                width: 100%;
+                content: "";
+                border-bottom: 1px solid $bg-heading;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .region-content {
+      padding-left: 21px;
+
+      .view-content {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 40px;
+
+        .views-row {
+          color: $bg-heading;
+          padding-bottom: 27px;
+          border-bottom: 1px solid #c4c4c4;
+
+          .views-field-field-image-to-card {
+            height: 161px;
+            margin-bottom: 12px;
+          }
+
+          .views-field-field-category {
+            @include font-setting(normal, 400, 18px, 21px);
+            display: inline-flex;
+            width: 75%;
+          }
+
+          .views-field-price {
+            @include font-setting(normal, 700, 22px, 26px);
+            color: $link-price;
+            display: inline-flex;
+            justify-content: flex-end;
+            width: 25%;
+          }
+
+          .views-field-title {
+            @include font-setting(normal, 400, 16px, 19px);
+            margin: 12px 0 9px;
+          }
+
+          .views-field-field-rating {
+            display: block;
+            width: 100%;
+            height: 17px;
+          }
+
+          .views-field-nothing {
+            a {
+              width: 150px;
+              height: 30px;
+              line-height: 30px;
+              display: block;
+              text-align: center;
+              background-color: #e5e5e5;
+              color: $bg-heading;
+              border-radius: 0.5px;
+              border: 1px solid $bg-heading;
+              margin: 12px auto 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}

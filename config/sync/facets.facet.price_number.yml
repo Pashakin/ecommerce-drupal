@@ -1,4 +1,4 @@
-uuid: 94a0c301-9d95-4622-8133-2b46cb3ab4b9
+uuid: 4f34b0d5-3edb-4e03-952f-1347b0eb393c
 langcode: en
 status: true
 dependencies:
@@ -7,7 +7,7 @@ dependencies:
     - views.view.shop
   module:
     - search_api
-id: price
+id: price_number
 name: Price
 weight: 0
 min_count: 1
@@ -30,11 +30,11 @@ widget:
     show_numbers: true
     prefix: ''
     suffix: ''
-    min_type: search_result
+    min_type: fixed
     min_value: !!float 0
-    max_type: search_result
-    max_value: !!float 10
-    step: !!float 1
+    max_type: fixed
+    max_value: !!float 1000
+    step: !!float 100
 empty_behavior:
   behavior: none
 only_visible_when_facet_source_is_visible: true

@@ -23,35 +23,35 @@ content:
     label: above
     settings:
       link: true
-    third_party_settings: {}
+    third_party_settings: {  }
     weight: 4
     region: content
   field_image:
     type: image
     label: hidden
     settings:
-      image_link: ""
-      image_style: ""
-    third_party_settings: {}
+      image_link: ''
+      image_style: ''
+    third_party_settings: {  }
     weight: 1
     region: content
   field_image_to_card:
     type: image
     label: above
     settings:
-      image_link: ""
-      image_style: ""
-    third_party_settings: {}
+      image_link: ''
+      image_style: ''
+    third_party_settings: {  }
     weight: 5
     region: content
   field_rating:
     type: starrating
     label: hidden
     settings:
-      fill_blank: "1"
+      fill_blank: '1'
       icon_type: star
-      icon_color: "1"
-    third_party_settings: {}
+      icon_color: '1'
+    third_party_settings: {  }
     weight: 6
     region: content
   price:
@@ -60,7 +60,7 @@ content:
     settings:
       strip_trailing_zeroes: true
       currency_display: symbol
-    third_party_settings: {}
+    third_party_settings: {  }
     weight: 2
     region: content
   product_id:
@@ -68,7 +68,7 @@ content:
     label: hidden
     settings:
       link: true
-    third_party_settings: {}
+    third_party_settings: {  }
     weight: 3
     region: content
   title:
@@ -76,7 +76,7 @@ content:
     label: hidden
     settings:
       link_to_entity: false
-    third_party_settings: {}
+    third_party_settings: {  }
     weight: 0
     region: content
 hidden:
