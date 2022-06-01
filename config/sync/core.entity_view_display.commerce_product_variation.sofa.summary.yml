@@ -22,9 +22,9 @@ content:
     type: image
     label: hidden
     settings:
-      image_link: ""
-      image_style: ""
-    third_party_settings: {}
+      image_link: ''
+      image_style: ''
+    third_party_settings: {  }
     weight: 0
     region: content
   price:
@@ -33,7 +33,7 @@ content:
     settings:
       strip_trailing_zeroes: true
       currency_display: symbol
-    third_party_settings: {}
+    third_party_settings: {  }
     weight: 2
     region: content
   product_id:
@@ -42,7 +42,7 @@ content:
     settings:
       view_mode: similar_products
       link: false
-    third_party_settings: {}
+    third_party_settings: {  }
     weight: 3
     region: content
   title:
@@ -50,7 +50,7 @@ content:
     label: hidden
     settings:
       link_to_entity: false
-    third_party_settings: {}
+    third_party_settings: {  }
     weight: 1
     region: content
 hidden:
