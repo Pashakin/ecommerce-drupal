@@ -7,7 +7,7 @@
 
 .product-wrapper {
   margin: 32px 0 122px;
-  @media (max-width: 1280px) {
+  @media (max-width: 1300px) {
     margin-top: adaptive-value(32, 16);
     margin-bottom: adaptive-value(122, 61);
   }
@@ -27,7 +27,7 @@
       "images variation"
       "similar-products similar-products";
     column-gap: 40px;
-    @media (max-width: 1280px) {
+    @media (max-width: 1300px) {
       column-gap: adaptive-value(40, 15);
     }
 
@@ -40,7 +40,7 @@
     &__rating {
       grid-area: rating;
       margin: 12px 0 24px;
-      @media (max-width: 1280px) {
+      @media (max-width: 1300px) {
         margin-top: adaptive-value(12, 6);
         margin-bottom: adaptive-value(24, 12);
       }
@@ -51,14 +51,14 @@
 
       .slider-for {
         margin-bottom: 21px;
-        @media (max-width: 1280px) {
+        @media (max-width: 1300px) {
           margin-bottom: adaptive-value(21, 10);
         }
 
         .slick-slide {
           div {
             height: 408px;
-            @media (max-width: 1280px) {
+            @media (max-width: 1300px) {
               height: adaptive-value(408, 204);
             }
             overflow: hidden;
@@ -70,14 +70,14 @@
       .slider-nav {
         .slick-slide {
           margin: 0 28.5px;
-          @media (max-width: 1280px) {
+          @media (max-width: 1300px) {
             margin: 0 adaptive-value(28.5, 14.25);
           }
 
           div {
             height: 159px;
             width: 154px;
-            @media (max-width: 1280px) {
+            @media (max-width: 1300px) {
               height: adaptive-value(159, 79.5);
               width: adaptive-value(154, 77);
             }
@@ -107,7 +107,7 @@
 
     &__price {
       @include font-setting(normal, 700, 20px, 23px);
-      @media (max-width: 1280px) {
+      @media (max-width: 1300px) {
         font-size: adaptive-value(20, 16);
         line-height: adaptive-value(23, 19);
       }
@@ -120,7 +120,7 @@
       border-bottom: 1px solid #999999;
       margin: 25px 0;
       padding: 25px 0;
-      @media (max-width: 1280px) {
+      @media (max-width: 1300px) {
         margin: adaptive-value(25, 15) 0;
         padding: adaptive-value(25, 15) 0;
       }
@@ -230,7 +230,7 @@
       text-align: center;
       @include font-setting(normal, 500, 48px, 56px);
       margin: 89px 0 58px;
-      @media (max-width: 1280px) {
+      @media (max-width: 1300px) {
         font-size: adaptive-value(48, 24);
         line-height: adaptive-value(56, 28);
         margin-top: adaptive-value(89, 25);
@@ -242,7 +242,7 @@
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       gap: 40px;
-      @media (max-width: 1280px) {
+      @media (max-width: 1300px) {
         gap: adaptive-value(40, 15);
       }
     }
@@ -250,7 +250,7 @@
     &__image {
       .field--name-field-image-to-card {
         height: 442px;
-        @media (max-width: 1280px) {
+        @media (max-width: 1300px) {
           height: adaptive-value(442, 221);
         }
       }
@@ -261,7 +261,7 @@
       justify-content: space-between;
       @include font-setting(normal, 700, 20px, 23px);
       margin: 28px 0;
-      @media (max-width: 1280px) {
+      @media (max-width: 1300px) {
         font-size: adaptive-value(20, 16);
         line-height: adaptive-value(23, 19);
         margin: adaptive-value(28, 14) 0;
@@ -275,7 +275,7 @@
 
     &__body {
       @include font-setting(normal, 400, 18px, 25px);
-      @media (max-width: 1280px) {
+      @media (max-width: 1300px) {
         font-size: adaptive-value(18, 14);
         line-height: adaptive-value(25, 21);
       }
@@ -284,7 +284,7 @@
     &__link {
       @include font-setting(normal, 400, 16px, 19px);
       margin-top: 27px;
-      @media (max-width: 1280px) {
+      @media (max-width: 1300px) {
         margin-top: adaptive-value(27, 14);
       }
 

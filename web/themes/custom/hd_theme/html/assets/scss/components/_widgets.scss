@@ -8,7 +8,7 @@
   .field--name-field-sale,
   .field--name-name {
     @include font-setting(normal, 500, 48px, 56px);
-    @media (max-width: 1280px) {
+    @media (max-width: 1300px) {
       font-size: adaptive-value(48, 24);
       line-height: adaptive-value(56, 28);
     }
@@ -18,7 +18,7 @@
   .field--name-field-title,
   .views-field-title {
     @include font-setting(normal, 400, 28px, 33px);
-    @media (max-width: 1280px) {
+    @media (max-width: 1300px) {
       font-size: adaptive-value(28, 20);
       line-height: adaptive-value(33, 24);
     }
@@ -28,7 +28,7 @@
   .field--name-field-description,
   .views-field-body {
     @include font-setting(normal, 400, 18px, 25px);
-    @media (max-width: 1280px) {
+    @media (max-width: 1300px) {
       font-size: adaptive-value(18, 14);
       line-height: adaptive-value(25, 21);
     }
@@ -39,7 +39,7 @@
 .widget-inspiration .field--name-field-link,
 .widget-block .views-field-view-commerce-product {
   @include font-setting(normal, 500, 20px, 23px);
-  @media (max-width: 1280px) {
+  @media (max-width: 1300px) {
     font-size: adaptive-value(20, 16);
     line-height: adaptive-value(23, 19);
   }
@@ -61,7 +61,7 @@
   align-items: center;
   text-align: center;
   padding: 52px 0;
-  @media (max-width: 1280px) {
+  @media (max-width: 1300px) {
     padding: adaptive-value(52, 26) 0;
   }
 
@@ -72,7 +72,7 @@
   &__description {
     max-width: 506px;
     margin: 32px 0 24px;
-    @media (max-width: 1280px) {
+    @media (max-width: 1300px) {
       margin-top: adaptive-value(32, 20);
       margin-bottom: adaptive-value(24, 18);
     }
@@ -80,7 +80,7 @@
 
   &__button {
     @include font-setting(normal, 400, 24px, 60px);
-    @media (max-width: 1280px) {
+    @media (max-width: 1300px) {
       font-size: adaptive-value(24, 18);
       line-height: adaptive-value(60, 40);
     }
@@ -88,7 +88,7 @@
     a {
       width: 240px;
       height: 60px;
-      @media (max-width: 1280px) {
+      @media (max-width: 1300px) {
         width: adaptive-value(240, 180);
         height: adaptive-value(60, 40);
       }
@@ -100,7 +100,7 @@
 .widget-inspiration {
   .field--name-name {
     margin: 52px 0 50px;
-    @media (max-width: 1280px) {
+    @media (max-width: 1300px) {
       margin-top: adaptive-value(52, 30);
       margin-bottom: adaptive-value(50, 20);
     }
@@ -110,15 +110,23 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 40px;
-    @media (max-width: 1280px) {
+    @media (max-width: 1300px) {
       gap: adaptive-value(40, 15);
     }
 
     .field--name-field-title {
       margin: 24px 0;
-      @media (max-width: 1280px) {
+      @media (max-width: 1300px) {
         margin: adaptive-value(24, 10) 0;
       }
+    }
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .widget-inspiration {
+    .field--name-field-items {
+      grid-template-columns: 1fr;
     }
   }
 }
@@ -127,7 +135,7 @@
 .widget-block {
   .field--name-name {
     margin: 52px 0 58px;
-    @media (max-width: 1280px) {
+    @media (max-width: 1300px) {
       margin-top: adaptive-value(52, 30);
       margin-bottom: adaptive-value(58, 20);
     }
@@ -137,20 +145,20 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 0 40px;
-    @media (max-width: 1280px) {
+    @media (max-width: 1300px) {
       gap: 0 adaptive-value(40, 15);
     }
 
     .views-field-title {
       margin: 24px 0;
-      @media (max-width: 1280px) {
+      @media (max-width: 1300px) {
         margin: adaptive-value(24, 10) 0;
       }
     }
 
     .views-field-body {
       margin-bottom: 24px;
-      @media (max-width: 1280px) {
+      @media (max-width: 1300px) {
         margin-bottom: adaptive-value(24, 10);
       }
     }
@@ -169,7 +177,7 @@
 .widget-sale {
   width: 100%;
   margin: 100px 0 52px;
-  @media (max-width: 1280px) {
+  @media (max-width: 1300px) {
     margin-top: adaptive-value(100, 40);
     margin-bottom: adaptive-value(52, 26);
   }
