@@ -1,0 +1,110 @@
+uuid: 19b96834-f2c0-4db8-bd26-00a3f33fc0b8
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_variation_type.table
+    - field.field.commerce_product_variation.table.attribute_color
+    - field.field.commerce_product_variation.table.field_category
+    - field.field.commerce_product_variation.table.field_image
+    - field.field.commerce_product_variation.table.field_image_to_card
+    - field.field.commerce_product_variation.table.field_rating
+  module:
+    - commerce_price
+    - image
+    - starrating
+id: commerce_product_variation.table.default
+targetEntityType: commerce_product_variation
+bundle: table
+mode: default
+content:
+  attribute_color:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_image:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: ''
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_image_to_card:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: ''
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_rating:
+    type: starrating
+    label: hidden
+    settings:
+      fill_blank: 0
+      icon_type: star
+      icon_color: 1
+    third_party_settings: {  }
+    weight: 6
+    region: content
+  langcode:
+    type: language
+    label: above
+    settings:
+      link_to_entity: false
+      native_language: false
+    third_party_settings: {  }
+    weight: 7
+    region: content
+  list_price:
+    type: commerce_price_default
+    label: above
+    settings:
+      strip_trailing_zeroes: false
+      currency_display: symbol
+    third_party_settings: {  }
+    weight: 9
+    region: content
+  price:
+    type: commerce_price_default
+    label: hidden
+    settings:
+      strip_trailing_zeroes: false
+      currency_display: symbol
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  product_id:
+    type: entity_reference_label
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  sku:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 8
+    region: content
+  title:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  field_category: true
+  search_api_excerpt: true

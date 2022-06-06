@@ -1,0 +1,10 @@
+uuid: 8f0da96f-7c15-43c5-b1ca-f1de9645d88a
+langcode: en
+status: true
+dependencies: {  }
+id: table
+label: Table
+traits: {  }
+locked: false
+orderItemType: default
+generateTitle: false

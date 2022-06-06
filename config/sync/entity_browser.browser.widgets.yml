@@ -24,7 +24,7 @@ widgets:
   90bfaa16-da03-479a-bf68-18cda7d70cbd:
     id: view
     uuid: 90bfaa16-da03-479a-bf68-18cda7d70cbd
-    label: view
+    label: View
     weight: 1
     settings:
       submit_text: 'Select entities'
@@ -74,7 +74,7 @@ widgets:
   b6db51ab-495f-41ad-8e8f-0e07e861ed64:
     id: entity_form
     uuid: b6db51ab-495f-41ad-8e8f-0e07e861ed64
-    label: block
+    label: Block
     weight: 6
     settings:
       submit_text: 'Save entity'
