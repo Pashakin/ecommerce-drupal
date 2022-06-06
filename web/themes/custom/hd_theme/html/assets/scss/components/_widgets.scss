@@ -131,7 +131,7 @@
   }
 }
 
-// Block widget
+// General Block widget
 .widget-block {
   .field--name-name {
     margin: 52px 0 58px;
@@ -140,7 +140,10 @@
       margin-bottom: adaptive-value(58, 20);
     }
   }
+}
 
+// New In Store Block widget
+.new-in-store {
   .view-content {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -166,7 +169,7 @@
 }
 
 @media screen and (max-width: 767px) {
-  .widget-block {
+  .new-in-store {
     .view-content {
       grid-template-columns: 1fr 1fr;
     }
@@ -217,6 +220,113 @@
     &__left,
     &__right {
       width: 100%;
+    }
+  }
+}
+
+// Most Popular Block widget
+.most-popular {
+  margin-bottom: 100px;
+  @media (max-width: 1300px) {
+    margin-bottom: adaptive-value(100, 40);
+  }
+
+  .view-content {
+    .slick-prev {
+      left: 10px;
+    }
+
+    .slick-next {
+      right: 10px;
+    }
+
+    .slick-arrow {
+      z-index: 5;
+      height: 40px;
+      width: 40px;
+      background-color: #e5e5e5;
+
+      &::before {
+        font-size: 24px;
+        color: $bg-heading;
+      }
+    }
+
+    .slick-list {
+      margin: 0 -20px;
+      @media (max-width: 1300px) {
+        margin: 0 adaptive-value(-20, -7.5);
+      }
+
+      .slick-slide {
+        margin: 0 20px;
+        @media (max-width: 1300px) {
+          margin: 0 adaptive-value(20, 7.5);
+        }
+
+        .views-row {
+          background-color: #c4c4c4;
+          padding: 40px 40px 20px;
+          @media (max-width: 1300px) {
+            padding: adaptive-value(40, 30) adaptive-value(40, 30) 20px;
+          }
+          text-align: center;
+
+          .views-field-field-image-to-card {
+            .field-content {
+              height: 201px;
+
+              img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                max-width: unset;
+              }
+            }
+          }
+
+          .views-field-title {
+            margin: 30px 0 10px;
+            @media (max-width: 1300px) {
+              margin-top: adaptive-value(30, 15);
+            }
+          }
+
+          .views-field-price__number {
+            @include font-setting(normal, 700, 22px, 26px);
+            @media (max-width: 1300px) {
+              font-size: adaptive-value(22, 18);
+              line-height: adaptive-value(26, 22);
+            }
+            color: $link-price;
+          }
+        }
+
+        &:nth-child(odd) {
+          .views-row {
+            padding-bottom: 70px;
+            @media (max-width: 1300px) {
+              padding-bottom: adaptive-value(70, 40);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .most-popular {
+    .view-content {
+      .slick-list {
+        .slick-slide {
+          &:nth-child(odd) {
+            .views-row {
+              padding-bottom: 20px;
+            }
+          }
+        }
+      }
     }
   }
 }
