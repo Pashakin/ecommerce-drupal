@@ -1,0 +1,49 @@
+.custom-module-block {
+  margin: 30px auto 50px;
+  max-width: 500px;
+
+  form {
+    .result,
+    .form__item {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .form__item {
+      margin-bottom: 10px;
+    }
+
+    .form-input {
+      width: 60%;
+    }
+
+    label {
+      font-weight: 500;
+    }
+
+    select,
+    input {
+      height: 30px;
+      border-radius: 5px;
+      width: 100%;
+    }
+
+    input {
+      border: 1px solid #f2f2f2;
+      padding: 5px;
+    }
+
+    .error {
+      border: 1px solid red;
+    }
+
+    .error-amount,
+    .error-advance,
+    .error-months {
+      display: none;
+      color: red;
+      font-weight: 500;
+      margin-top: 5px;
+    }
+  }
+}

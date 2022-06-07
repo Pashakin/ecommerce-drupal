@@ -3,23 +3,34 @@
     <div class="form__items">
       <div class="form__item">
         <label for="bank">{{ 'Choose a bank:'|t }}</label>
-        <select name="bank" id="bank">
-          {% for bank in banks %}
-            <option value="{{ loop.index }}">{{ bank.name }}</option>
-          {% endfor %}
-        </select>
+        <div class="form-input">
+          <select name="bank" id="bank">
+            {% for bank in banks %}
+              <option value="{{ loop.index }}">{{ bank.name }}</option>
+            {% endfor %}
+          </select>
+        </div>
       </div>
       <div class="form__item">
         <label for="amount">{{ 'Amount:'|t }}</label>
-        <input type="number" id="amount" name="amount" min="1000" max="10000">
+        <div class="form-input">
+          <input type="number" id="amount" name="amount" min="1000" max="10000">
+          <p class="error-amount"></p>
+        </div>
       </div>
       <div class="form__item">
         <label for="advance">{{ 'Advance %:'|t }}</label>
-        <input type="number" id="advance" name="advance" min="10" max="90">
+        <div class="form-input">
+          <input type="number" id="advance" name="advance" min="10" max="90">
+          <p class="error-advance"></p>
+        </div>
       </div>
       <div class="form__item">
         <label for="months">{{ 'Months:'|t }}</label>
-        <input type="number" id="months" name="months" min="3" max="36">
+        <div class="form-input">
+          <input type="number" id="months" name="months" min="3" max="36">
+          <p class="error-months"></p>
+        </div>
       </div>
     </div>
     <div class="result">
