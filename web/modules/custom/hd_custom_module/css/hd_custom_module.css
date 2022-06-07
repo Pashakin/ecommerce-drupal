@@ -1,1 +1,39 @@
-
+.custom-module-block {
+  margin: 30px auto 50px;
+  max-width: 500px;
+}
+.custom-module-block form .result,
+.custom-module-block form .form__item {
+  display: flex;
+  justify-content: space-between;
+}
+.custom-module-block form .form__item {
+  margin-bottom: 10px;
+}
+.custom-module-block form .form-input {
+  width: 60%;
+}
+.custom-module-block form label {
+  font-weight: 500;
+}
+.custom-module-block form select,
+.custom-module-block form input {
+  height: 30px;
+  border-radius: 5px;
+  width: 100%;
+}
+.custom-module-block form input {
+  border: 1px solid #f2f2f2;
+  padding: 5px;
+}
+.custom-module-block form .error {
+  border: 1px solid red;
+}
+.custom-module-block form .error-amount,
+.custom-module-block form .error-advance,
+.custom-module-block form .error-months {
+  display: none;
+  color: red;
+  font-weight: 500;
+  margin-top: 5px;
+}
