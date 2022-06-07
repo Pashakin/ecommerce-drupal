@@ -1,0 +1,31 @@
+uuid: 12c5cebd-dc91-4b9d-b4d3-97d8b6960ac2
+langcode: en
+status: true
+dependencies:
+  module:
+    - hd_custom_module
+    - system
+  theme:
+    - hd_theme
+id: hdcustommoduleblock
+theme: hd_theme
+region: content
+weight: 0
+provider: null
+plugin: hd_custom_module_block
+settings:
+  id: hd_custom_module_block
+  label: 'HD custom module block'
+  label_display: '0'
+  provider: hd_custom_module
+  bank_name_1: 'Bank 1'
+  bank_percentage_1: '7'
+  bank_months_1: '12'
+  bank_name_2: 'Bank 2'
+  bank_percentage_2: '5'
+  bank_months_2: '12'
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /support

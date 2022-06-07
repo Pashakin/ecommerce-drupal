@@ -1,0 +1,23 @@
+uuid: 2aaf9949-0214-439a-98d8-815649d79816
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.commode
+    - field.storage.commerce_product.body
+  module:
+    - text
+id: commerce_product.commode.body
+field_name: body
+entity_type: commerce_product
+bundle: commode
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: null
+settings:
+  display_summary: false
+  required_summary: false
+field_type: text_with_summary

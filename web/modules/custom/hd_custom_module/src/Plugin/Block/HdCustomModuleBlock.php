@@ -6,7 +6,6 @@ use Drupal\Core\Block\BlockBase;
 use Drupal\Core\Form\FormStateInterface;
 
 /**
- *
  * @Block(
  *   id = "hd_custom_module_block",
  *   admin_label = @Translation("HD custom module block"),
@@ -40,11 +39,15 @@ class HdCustomModuleBlock extends BlockBase {
     ];
     $form['wrapper']['bank_1']['bank_percentage_1'] = [
       '#type' => 'number',
+      '#min' => 0,
+      '#step' => 0.01,
       '#title' => $this->t('%'),
       '#default_value' => $config['bank_percentage_1'] ?? '',
     ];
     $form['wrapper']['bank_1']['bank_months_1'] = [
       '#type' => 'number',
+      '#min' => 0,
+      '#step' => 0.01,
       '#title' => $this->t('Months'),
       '#default_value' => $config['bank_months_1'] ?? '',
     ];
@@ -61,11 +64,15 @@ class HdCustomModuleBlock extends BlockBase {
     ];
     $form['wrapper']['bank_2']['bank_percentage_2'] = [
       '#type' => 'number',
+      '#min' => 0,
+      '#step' => 0.01,
       '#title' => $this->t('%'),
       '#default_value' => $config['bank_percentage_2'] ?? '',
     ];
     $form['wrapper']['bank_2']['bank_months_2'] = [
       '#type' => 'number',
+      '#min' => 0,
+      '#step' => 0.01,
       '#title' => $this->t('Months'),
       '#default_value' => $config['bank_months_2'] ?? '',
     ];
@@ -92,7 +99,7 @@ class HdCustomModuleBlock extends BlockBase {
    * {@inheritdoc}
    */
   public function build() {
-    return  [
+    return [
       '#theme' => 'custom_block_template',
       '#attached' => [
         'library' =>  [
@@ -130,5 +137,4 @@ class HdCustomModuleBlock extends BlockBase {
       ]
     ];
   }
-
 }

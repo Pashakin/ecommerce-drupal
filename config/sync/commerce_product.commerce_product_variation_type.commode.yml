@@ -1,0 +1,10 @@
+uuid: 73599e54-7c9c-44c1-bf63-4b6b0cd73a3f
+langcode: en
+status: true
+dependencies: {  }
+id: commode
+label: Сommode
+traits: {  }
+locked: false
+orderItemType: default
+generateTitle: false

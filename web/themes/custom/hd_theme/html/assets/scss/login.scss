@@ -4,7 +4,22 @@ main {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    height: 50vh;
+    margin: 50px auto;
+
+    .tabs {
+      ul {
+        display: flex;
+        margin-bottom: 10px;
+
+        li {
+          margin: 0 5px;
+
+          &.is-active {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
 
     .user-login-form {
       input {
