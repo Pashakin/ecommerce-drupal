@@ -1,0 +1,29 @@
+uuid: e86a4ff9-a4c9-47f1-a772-2d876df3cfcd
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_variation_type.commode
+    - field.storage.commerce_product_variation.field_category
+    - taxonomy.vocabulary.category
+id: commerce_product_variation.commode.field_category
+field_name: field_category
+entity_type: commerce_product_variation
+bundle: commode
+label: Category
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      category: category
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

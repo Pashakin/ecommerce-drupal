@@ -1,0 +1,29 @@
+uuid: af23ef31-8b67-462d-9840-ba0198edb8b6
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.commode
+    - commerce_product.commerce_product_variation_type.commode
+    - field.storage.commerce_product.field_similar_products
+id: commerce_product.commode.field_similar_products
+field_name: field_similar_products
+entity_type: commerce_product
+bundle: commode
+label: 'Similar products'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:commerce_product_variation'
+  handler_settings:
+    target_bundles:
+      commode: commode
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

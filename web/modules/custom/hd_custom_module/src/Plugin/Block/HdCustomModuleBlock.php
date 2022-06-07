@@ -6,7 +6,6 @@ use Drupal\Core\Block\BlockBase;
 use Drupal\Core\Form\FormStateInterface;
 
 /**
- *
  * @Block(
  *   id = "hd_custom_module_block",
  *   admin_label = @Translation("HD custom module block"),
@@ -100,7 +99,7 @@ class HdCustomModuleBlock extends BlockBase {
    * {@inheritdoc}
    */
   public function build() {
-    return  [
+    return [
       '#theme' => 'custom_block_template',
       '#attached' => [
         'library' =>  [
@@ -138,5 +137,4 @@ class HdCustomModuleBlock extends BlockBase {
       ]
     ];
   }
-
 }

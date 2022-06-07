@@ -1,0 +1,14 @@
+uuid: 376acdb2-3b15-4352-be57-b2f687b04a5f
+langcode: en
+status: true
+dependencies: {  }
+id: commode
+label: Сommode
+traits: {  }
+locked: false
+description: ''
+variationType: commode
+variationTypes:
+  - commode
+multipleVariations: true
+injectVariationFields: true
