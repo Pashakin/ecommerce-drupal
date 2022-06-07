@@ -21,12 +21,12 @@
           $(".result-content").html("<p>" + result + "</p>");
         }
 
-        check("amount", 1000, 10000);
-        check("advance", 10, 90);
-        check("months", 3, 36);
+        checkInput("amount", 1000, 10000);
+        checkInput("advance", 10, 90);
+        checkInput("months", 3, 36);
       });
 
-      function check(id, lessThan, moreThan) {
+      function checkInput(id, lessThan, moreThan) {
         $(`#${id}`, context).focus(function () {
           $(`#${id}`, context).removeClass("error");
           $(`.error-${id}`).css("display", "none");
@@ -43,15 +43,13 @@
 
       function errorMessage(id) {
         if (id === "amount") {
-          $(`.error-${id}`, context).html(
+          $(`.error-${id}`, context).text(
             "Put the value between 1000 and 10000"
           );
         } else if (id === "advance") {
-          $(`.error-${id}`, context).html("Put the value between 10 and 90");
-        } else if (id === "months") {
-          $(`.error-${id}`, context).html("Put the value between 3 and 36");
+          $(`.error-${id}`, context).text("Put the value between 10 and 90");
         } else {
-          $(`.error-${id}`, context).html("");
+          $(`.error-${id}`, context).text("Put the value between 3 and 36");
         }
       }
 
