@@ -1,0 +1,34 @@
+uuid: 46279091-4718-4f13-a84c-9eb7ee8c7e92
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.text_and_link.field_secondary_cta_copy
+    - field.field.paragraph.text_and_link.field_secondary_cta_link
+    - paragraphs.paragraphs_type.text_and_link
+  module:
+    - link
+id: paragraph.text_and_link.default
+targetEntityType: paragraph
+bundle: text_and_link
+mode: default
+content:
+  field_secondary_cta_copy:
+    type: string_textarea
+    weight: 0
+    region: content
+    settings:
+      rows: 2
+      placeholder: ''
+    third_party_settings: {  }
+  field_secondary_cta_link:
+    type: link_default
+    weight: 1
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

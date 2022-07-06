@@ -1,0 +1,14 @@
+uuid: 1b9ea038-f39f-4f8a-9dd5-6fc84cb2fac6
+langcode: en
+status: true
+dependencies: {  }
+id: table
+label: Table
+traits: {  }
+locked: false
+description: ''
+variationType: table
+variationTypes:
+  - table
+multipleVariations: true
+injectVariationFields: true

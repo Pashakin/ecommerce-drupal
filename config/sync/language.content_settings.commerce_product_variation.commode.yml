@@ -1,0 +1,11 @@
+uuid: 8750253c-8f1e-47a0-9257-8e14277fe3d4
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_variation_type.commode
+id: commerce_product_variation.commode
+target_entity_type_id: commerce_product_variation
+target_bundle: commode
+default_langcode: site_default
+language_alterable: false

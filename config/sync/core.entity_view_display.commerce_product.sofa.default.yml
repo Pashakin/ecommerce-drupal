@@ -5,11 +5,13 @@ dependencies:
   config:
     - commerce_product.commerce_product_type.sofa
     - field.field.commerce_product.sofa.body
+    - field.field.commerce_product.sofa.field_image
     - field.field.commerce_product.sofa.field_similar_products
     - field.field.commerce_product.sofa.field_tabs
   module:
     - commerce_product
     - entity_reference_revisions
+    - image
     - text
 id: commerce_product.sofa.default
 targetEntityType: commerce_product
@@ -21,7 +23,16 @@ content:
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    weight: 11
+    weight: 2
+    region: content
+  field_image:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: ''
+    third_party_settings: {  }
+    weight: 4
     region: content
   field_similar_products:
     type: entity_reference_entity_view
@@ -30,7 +41,7 @@ content:
       view_mode: summary
       link: false
     third_party_settings: {  }
-    weight: 16
+    weight: 5
     region: content
   field_tabs:
     type: entity_reference_revisions_entity_view
@@ -39,7 +50,7 @@ content:
       view_mode: default
       link: ''
     third_party_settings: {  }
-    weight: 12
+    weight: 3
     region: content
   title:
     type: string
@@ -47,7 +58,7 @@ content:
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    weight: -5
+    weight: 0
     region: content
   variations:
     type: commerce_add_to_cart
@@ -55,7 +66,7 @@ content:
     settings:
       combine: true
     third_party_settings: {  }
-    weight: 10
+    weight: 1
     region: content
 hidden:
   created: true

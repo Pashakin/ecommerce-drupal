@@ -1,7 +1,5 @@
-<div{{ attributes.addClass('widget widget-image-banner') }}>
+<div{{ attributes.addClass('widget widget-main-banner overflow-bg') }}>
   {% if content %}
-    <div class="container">
-      {{- content -}}
-    </div>
+    {{ content }}
   {% endif %}
 </div>

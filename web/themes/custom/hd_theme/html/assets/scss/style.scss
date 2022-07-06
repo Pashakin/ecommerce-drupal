@@ -1,77 +1,72 @@
-@import '_footer', '_header', '_widgets' ;
+@import "helpers/variables";
+@import "helpers/functions";
+@import "helpers/mixins";
+@import "helpers/zero";
 
-@font-face {
-  font-family: 'Roboto';
-  src: url("../fonts/Roboto-Regular.woff2") format("woff2");
-  font-style: normal;
-  font-weight: 400;
+@import "components/fonts";
+@import "components/paragraphs";
+@import "components/widgets";
+
+@import "layout/header";
+@import "layout/footer";
+@import "layout/breadcrumb";
+@import "layout/blog";
+
+@import "pages/blogs";
+@import "pages/shop";
+
+html {
+  font-family: "Roboto", sans-serif;
 }
 
-@font-face {
-  font-family: 'Roboto';
-  src: url("../fonts/Roboto-Medium.woff2") format("woff2");
-  font-style: normal;
-  font-weight: 500;
-}
-
-@font-face {
-  font-family: 'Roboto';
-  src: url("../fonts/Roboto-Bold.woff2") format("woff2");
-  font-style: normal;
-  font-weight: 700;
-}
-// *** Zero *** //
-*{
-  padding: 0;
-  margin: 0;
-  border: 0;
-  user-select: none;
-}
-*,*:before,*:after{
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-}
-:focus,:active{outline: none;}
-a:focus,a:active{outline: none;}
-
-nav,footer,header,aside{display: block;}
-
-html,body{
-  height: 100%;
-  width: 100%;
-  font-size: 100%;
-  line-height: 1;
-  -ms-text-size-adjust: 100%;
-  -moz-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
-  touch-action: pan-x pan-y;
-}
-input,button,textarea{font-family:inherit;}
-
-input::-ms-clear{display: none;}
-button{cursor: pointer;}
-button::-moz-focus-inner {padding:0;border:0;}
-a, a:visited{text-decoration: none;}
-a:hover{text-decoration: none;}
-ul li{list-style: none;}
-img{vertical-align: top;}
-
-h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
-* {
-  font-family: 'Roboto', sans-serif;
-}
 .layout-container {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   height: 100vh;
 }
-.container {
-  max-width: 1280px;
-  margin: 0 auto;
+
+.content-overflow {
+  overflow: hidden;
 }
-img {
-  max-width: 100%;
-  height: auto;
+
+.container {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.main-btn {
+  background-color: $link-price;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+
+  a {
+    color: $text;
+    display: inline-block;
+  }
+}
+
+.overflow-bg {
+  position: relative;
+  background-color: #f2f2f2;
+
+  &:before,
+  &:after {
+    display: block;
+    content: " ";
+    position: absolute;
+    width: 100vw;
+    top: 0;
+    bottom: 0;
+    background-color: #f2f2f2;
+  }
+
+  &:before {
+    left: 100%;
+  }
+
+  &:after {
+    right: 100%;
+  }
 }

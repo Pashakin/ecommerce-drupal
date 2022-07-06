@@ -1,0 +1,50 @@
+uuid: bb4c81b4-0b90-4bc6-a107-100be03198f8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_paragraphs
+    - node.type.page
+    - paragraphs.paragraphs_type.inspiration
+    - paragraphs.paragraphs_type.key_features_panel
+    - paragraphs.paragraphs_type.text_and_link
+  module:
+    - entity_reference_revisions
+id: node.page.field_paragraphs
+field_name: field_paragraphs
+entity_type: node
+bundle: page
+label: Paragraphs
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      inspiration: inspiration
+      key_features_panel: key_features_panel
+      text_and_link: text_and_link
+    negate: 0
+    target_bundles_drag_drop:
+      image_and_description:
+        weight: 7
+        enabled: false
+      inspiration:
+        weight: 8
+        enabled: true
+      key_features_panel:
+        weight: 9
+        enabled: true
+      product_tabs:
+        weight: 10
+        enabled: false
+      text:
+        weight: 11
+        enabled: false
+      text_and_link:
+        weight: 12
+        enabled: true
+field_type: entity_reference_revisions

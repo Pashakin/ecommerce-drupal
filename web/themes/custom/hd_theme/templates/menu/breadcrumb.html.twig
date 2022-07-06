@@ -4,9 +4,10 @@
       {% for item in breadcrumb %}
         <li>
           {% if item.url %}
-            <a href="{{ item.url }}">{{ item.text }}</a><span class="breadcrumb-arrow">></span>
+            <a href="{{ item.url }}">{{ item.text }}</a><!--
+            --><span class="breadcrumb__arrow">></span>
           {% else %}
-            <span class="breadcrumb-current">{{ item.text }}</span>
+            <span class="breadcrumb__current">{{ item.text }}</span>
           {% endif %}
         </li>
       {% endfor %}

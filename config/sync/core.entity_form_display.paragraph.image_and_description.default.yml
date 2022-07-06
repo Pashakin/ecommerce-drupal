@@ -1,0 +1,35 @@
+uuid: c24b6c80-2684-4a0c-a707-7f682646e6a5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.image_and_description.field_feature_copy
+    - field.field.paragraph.image_and_description.field_illustration
+    - image.style.thumbnail
+    - paragraphs.paragraphs_type.image_and_description
+  module:
+    - svg_image
+id: paragraph.image_and_description.default
+targetEntityType: paragraph
+bundle: image_and_description
+mode: default
+content:
+  field_feature_copy:
+    type: string_textarea
+    weight: 1
+    region: content
+    settings:
+      rows: 3
+      placeholder: ''
+    third_party_settings: {  }
+  field_illustration:
+    type: image_image
+    weight: 0
+    region: content
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

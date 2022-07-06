@@ -1,0 +1,67 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 32.5vh);
+}
+
+@media screen and (max-width: 575px) {
+  .grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+
+  .grid__item {
+    height: 250px;
+  }
+}
+
+.grid__item {
+  -webkit-filter: grayscale(1); /* Safari 6.0 - 9.0 */
+  filter: grayscale(1);
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+.grid__item:hover {
+  -webkit-filter: grayscale(0); /* Safari 6.0 - 9.0 */
+  filter: grayscale(0);
+  transition: 0.2s;
+}
+
+.grid__item_bg-image {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.grid__item_big {
+  grid-row: span 2;
+  grid-column: span 2;
+  background-image: url("https://cdn.pixabay.com/photo/2016/03/27/17/59/motorcycle-1283299_960_720.jpg");
+}
+
+.grid__item_long-vr {
+  grid-row: span 2;
+  background-image: url("https://cdn.pixabay.com/photo/2014/07/31/23/37/motorbike-407186_960_720.jpg");
+}
+
+.grid__item_long-hr {
+  grid-column: span 2;
+  background-image: url("https://cdn.pixabay.com/photo/2020/04/20/07/00/moto-5066633_960_720.jpg");
+}
+
+.grid__item_small-1 {
+  background-image: url("https://cdn.pixabay.com/photo/2016/11/29/10/21/dirt-bike-1868996_960_720.jpg");
+}
+
+.grid__item_small-2 {
+  background-image: url("https://cdn.pixabay.com/photo/2016/04/07/06/53/bmw-1313343_960_720.jpg");
+}
+
+.grid__item_small-3 {
+  background-image: url("https://cdn.pixabay.com/photo/2014/04/23/20/34/dirt-bike-330815_960_720.jpg");
+}
+
+.grid__item_small-4 {
+  background-image: url("https://cdn.pixabay.com/photo/2016/11/22/23/47/dirt-road-1851258_960_720.jpg");
+}

@@ -16,9 +16,9 @@ content:
     type: color_field_formatter_swatch
     label: hidden
     settings:
-      shape: square
-      width: '25'
-      height: '25'
+      shape: circle
+      width: '20'
+      height: '20'
       opacity: true
       data_attribute: false
     third_party_settings: {  }

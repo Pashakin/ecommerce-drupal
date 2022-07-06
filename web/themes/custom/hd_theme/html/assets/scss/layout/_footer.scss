@@ -1,0 +1,132 @@
+footer {
+  background-color: $bg-heading;
+  padding: 6.598% 0 2.431%;
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: 1fr 15.874% 1fr;
+  grid-template-areas:
+    "menu-left logo menu-right"
+    "social social social"
+    "privacy privacy privacy";
+  align-items: end;
+
+  &__menu-left {
+    grid-area: menu-left;
+  }
+
+  &__branding {
+    grid-area: logo;
+    text-align: center;
+
+    img {
+      max-width: 100%;
+    }
+  }
+
+  &__menu-right {
+    grid-area: menu-right;
+  }
+
+  &__menu-social {
+    grid-area: social;
+    border-top: 1px solid $text;
+    padding-top: 4.366%;
+    margin-top: 4.366%;
+
+    .menu-item {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 10px;
+      background-color: $text;
+      height: 40px;
+      width: 40px;
+      @media (max-width: 1300px) {
+        height: adaptive-value(40, 34);
+        width: adaptive-value(40, 34);
+      }
+      border-radius: 50%;
+
+      a:before {
+        color: $bg-heading;
+        font-size: 23px;
+        @media (max-width: 1300px) {
+          font-size: adaptive-value(23, 18);
+        }
+      }
+    }
+  }
+
+  &__privacy {
+    grid-area: privacy;
+    display: flex;
+    justify-content: center;
+    color: $text;
+    margin-top: 5.715%;
+    @include font-setting(normal, 400, 14px, 20px);
+
+    div {
+      margin: 0 1.905%;
+    }
+  }
+
+  &__menu-left,
+  &__menu-right {
+    @include font-setting(normal, 700, 14px, 20px);
+
+    .menu-item {
+      margin: 0 7.305%;
+    }
+  }
+
+  a {
+    color: $text;
+  }
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+}
+
+@media screen and (max-width: 767px) {
+  footer {
+    padding: 35px 0 25px;
+  }
+
+  .footer {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "logo logo"
+      "menu-left menu-right"
+      "social social"
+      "privacy privacy";
+
+    &__branding {
+      margin-bottom: 30px;
+    }
+
+    &__menu-left,
+    &__menu-right {
+      .menu {
+        flex-direction: column;
+        align-items: center;
+
+        .menu-item {
+          margin: 5px 0;
+        }
+      }
+    }
+
+    &__menu-social {
+      padding-top: 35px;
+      margin-top: 35px;
+    }
+
+    &__privacy {
+      margin-top: 45px;
+    }
+  }
+}

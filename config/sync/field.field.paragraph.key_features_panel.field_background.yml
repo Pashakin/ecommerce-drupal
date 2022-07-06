@@ -1,0 +1,22 @@
+uuid: d3663eb3-264e-4a72-b1a6-ee358a746193
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_background
+    - paragraphs.paragraphs_type.key_features_panel
+  module:
+    - color_field
+id: paragraph.key_features_panel.field_background
+field_name: field_background
+entity_type: paragraph
+bundle: key_features_panel
+label: Background
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  opacity: 0
+field_type: color_field_type

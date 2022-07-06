@@ -1,0 +1,34 @@
+uuid: 5916d2f4-86da-4910-9909-4d08b67d4419
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.table
+    - field.storage.commerce_product.field_tabs
+    - paragraphs.paragraphs_type.product_tabs
+  module:
+    - entity_reference_revisions
+id: commerce_product.table.field_tabs
+field_name: field_tabs
+entity_type: commerce_product
+bundle: table
+label: Tabs
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      product_tabs: product_tabs
+    negate: 0
+    target_bundles_drag_drop:
+      inspiration:
+        weight: 3
+        enabled: false
+      product_tabs:
+        weight: 4
+        enabled: true
+field_type: entity_reference_revisions

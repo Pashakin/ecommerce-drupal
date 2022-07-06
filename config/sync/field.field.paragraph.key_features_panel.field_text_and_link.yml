@@ -1,0 +1,43 @@
+uuid: 17c3c20e-649e-4e1b-8fd8-9fb283d81756
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_text_and_link
+    - paragraphs.paragraphs_type.key_features_panel
+    - paragraphs.paragraphs_type.text_and_link
+  module:
+    - entity_reference_revisions
+id: paragraph.key_features_panel.field_text_and_link
+field_name: field_text_and_link
+entity_type: paragraph
+bundle: key_features_panel
+label: 'Text and link'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      text_and_link: text_and_link
+    negate: 0
+    target_bundles_drag_drop:
+      image_and_description:
+        weight: -8
+        enabled: false
+      inspiration:
+        weight: -11
+        enabled: false
+      key_features_panel:
+        weight: -9
+        enabled: false
+      product_tabs:
+        weight: -10
+        enabled: false
+      text_and_link:
+        weight: -7
+        enabled: true
+field_type: entity_reference_revisions

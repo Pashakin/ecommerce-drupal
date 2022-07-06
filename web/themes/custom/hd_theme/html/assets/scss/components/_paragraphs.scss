@@ -1,0 +1,103 @@
+//  Key features panel paragraph
+.key-features-panel {
+  font-family: "Roboto Slab", sans-serif;
+  margin: 40px 0;
+  padding: 48px;
+  @media (max-width: 1300px) {
+    padding: 48px adaptive-value(48, 15);
+  }
+  text-align: center;
+  color: #3a3533;
+
+  .field--name-field-secondary-cta-copy,
+  .field--name-field-feature-title {
+    @include font-setting(normal, 400, 25px, 35px);
+  }
+
+  .field--name-field-feature-title {
+    margin-bottom: 34px;
+  }
+
+  .field--name-field-image-and-description {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 32px;
+
+    .field__item {
+      flex-basis: 310px;
+
+      .field--name-field-illustration {
+        width: 160px;
+        height: 160px;
+        margin: 0 auto 30px;
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+
+      .field--name-field-feature-copy {
+        @include font-setting(normal, 400, 20px, 26px);
+        padding: 0 5px;
+      }
+    }
+  }
+
+  .field--name-field-primary-cta {
+    margin-top: 48px;
+
+    a,
+    button {
+      display: inline-flex;
+      align-items: center;
+      height: 45px;
+      padding: 0 23px;
+      border-radius: 4px;
+      background-color: #e81c24;
+      color: #ffffff;
+      @include font-setting(normal, 400, 16px, 24px);
+      transition: all 200ms ease-out;
+
+      &:hover {
+        box-shadow: 0 0.5em 0.5em -0.4em #e81c24;
+        transform: translateY(-0.25em);
+      }
+    }
+  }
+
+  .field--name-field-text-and-link {
+    margin: 24px auto 0;
+    max-width: 730px;
+    border-top: 1px dashed #c9c5b9;
+
+    .field--name-field-secondary-cta-link,
+    .field--name-field-secondary-cta-copy {
+      margin-top: 24px;
+    }
+
+    .field--name-field-secondary-cta-link {
+      @include font-setting(normal, 400, 14px, 20px);
+
+      a {
+        display: inline-block;
+        color: #3a3533;
+
+        &::after {
+          content: "";
+          width: 0px;
+          height: 1px;
+          display: block;
+          background-color: #e81c24;
+          transition: 300ms;
+        }
+
+        &:hover::after {
+          width: 100%;
+        }
+      }
+    }
+  }
+}

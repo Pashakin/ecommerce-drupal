@@ -1,0 +1,340 @@
+.widget {
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .field--name-field-text,
+  .field--name-field-sale,
+  .field--name-name {
+    @include font-setting(normal, 500, 48px, 56px);
+    @media (max-width: 1300px) {
+      font-size: adaptive-value(48, 24);
+      line-height: adaptive-value(56, 28);
+    }
+    color: $bg-heading;
+  }
+
+  .field--name-field-title,
+  .views-field-title {
+    @include font-setting(normal, 400, 28px, 33px);
+    @media (max-width: 1300px) {
+      font-size: adaptive-value(28, 20);
+      line-height: adaptive-value(33, 24);
+    }
+    color: $bg-heading;
+  }
+
+  .field--name-field-description,
+  .views-field-body {
+    @include font-setting(normal, 400, 18px, 25px);
+    @media (max-width: 1300px) {
+      font-size: adaptive-value(18, 14);
+      line-height: adaptive-value(25, 21);
+    }
+    color: $bg-heading;
+  }
+}
+
+.widget-inspiration .field--name-field-link,
+.widget-block .views-field-view-commerce-product {
+  @include font-setting(normal, 500, 20px, 23px);
+  @media (max-width: 1300px) {
+    font-size: adaptive-value(20, 16);
+    line-height: adaptive-value(23, 19);
+  }
+
+  a {
+    color: $bg-heading;
+    text-decoration: underline;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
+
+// Offer widget
+.widget-offer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 52px 0;
+  @media (max-width: 1300px) {
+    padding: adaptive-value(52, 26) 0;
+  }
+
+  &__title {
+    max-width: 787px;
+  }
+
+  &__description {
+    max-width: 506px;
+    margin: 32px 0 24px;
+    @media (max-width: 1300px) {
+      margin-top: adaptive-value(32, 20);
+      margin-bottom: adaptive-value(24, 18);
+    }
+  }
+
+  &__button {
+    @include font-setting(normal, 400, 24px, 60px);
+    @media (max-width: 1300px) {
+      font-size: adaptive-value(24, 18);
+      line-height: adaptive-value(60, 40);
+    }
+
+    a {
+      width: 240px;
+      height: 60px;
+      @media (max-width: 1300px) {
+        width: adaptive-value(240, 180);
+        height: adaptive-value(60, 40);
+      }
+    }
+  }
+}
+
+// Inspiration widget
+.widget-inspiration {
+  .field--name-name {
+    margin: 52px 0 50px;
+    @media (max-width: 1300px) {
+      margin-top: adaptive-value(52, 30);
+      margin-bottom: adaptive-value(50, 20);
+    }
+  }
+
+  .field--name-field-items {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    @media (max-width: 1300px) {
+      gap: adaptive-value(40, 15);
+    }
+
+    .field--name-field-title {
+      margin: 24px 0;
+      @media (max-width: 1300px) {
+        margin: adaptive-value(24, 10) 0;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .widget-inspiration {
+    .field--name-field-items {
+      grid-template-columns: 1fr;
+    }
+  }
+}
+
+// General Block widget
+.widget-block {
+  .field--name-name {
+    margin: 52px 0 58px;
+    @media (max-width: 1300px) {
+      margin-top: adaptive-value(52, 30);
+      margin-bottom: adaptive-value(58, 20);
+    }
+  }
+}
+
+// New In Store Block widget
+.new-in-store {
+  .view-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 40px;
+    @media (max-width: 1300px) {
+      gap: adaptive-value(40, 15);
+    }
+
+    .views-field-title {
+      margin: 24px 0;
+      @media (max-width: 1300px) {
+        margin: adaptive-value(24, 10) 0;
+      }
+    }
+
+    .views-field-body {
+      margin-bottom: 24px;
+      @media (max-width: 1300px) {
+        margin-bottom: adaptive-value(24, 10);
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .new-in-store {
+    .view-content {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .new-in-store {
+    .view-content {
+      grid-template-columns: 1fr;
+    }
+  }
+}
+
+// Sale widget
+.widget-sale {
+  width: 100%;
+  margin: 100px 0 52px;
+  @media (max-width: 1300px) {
+    margin-top: adaptive-value(100, 40);
+    margin-bottom: adaptive-value(52, 26);
+  }
+  background-color: #c4c4c4;
+
+  &__link {
+    display: flex;
+    align-items: center;
+  }
+
+  &__left {
+    width: 65.625%;
+  }
+
+  &__right {
+    width: 34.375%;
+    text-align: center;
+    padding: 10px;
+
+    .field--name-field-text {
+      text-transform: uppercase;
+      margin-bottom: 20px;
+    }
+
+    .field--name-field-sale {
+      color: $link-price;
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .widget-sale {
+    &__link {
+      flex-direction: column;
+    }
+
+    &__left,
+    &__right {
+      width: 100%;
+    }
+  }
+}
+
+// Most Popular Block widget
+.most-popular {
+  margin-bottom: 100px;
+  @media (max-width: 1300px) {
+    margin-bottom: adaptive-value(100, 40);
+  }
+
+  .view-content {
+    .slick-prev {
+      left: 10px;
+    }
+
+    .slick-next {
+      right: 10px;
+    }
+
+    .slick-arrow {
+      z-index: 5;
+      height: 40px;
+      width: 40px;
+      background-color: #e5e5e5;
+
+      &::before {
+        font-size: 24px;
+        color: $bg-heading;
+      }
+    }
+
+    .slick-list {
+      margin: 0 -20px;
+      @media (max-width: 1300px) {
+        margin: 0 adaptive-value(-20, -7.5);
+      }
+
+      .slick-slide {
+        margin: 0 20px;
+        @media (max-width: 1300px) {
+          margin: 0 adaptive-value(20, 7.5);
+        }
+
+        .views-row {
+          background-color: #c4c4c4;
+          padding: 40px 40px 20px;
+          @media (max-width: 1300px) {
+            padding: adaptive-value(40, 30) adaptive-value(40, 30) 20px;
+          }
+          text-align: center;
+
+          .views-field-field-image-to-card {
+            .field-content {
+              height: 201px;
+
+              img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                max-width: unset;
+              }
+            }
+          }
+
+          .views-field-title {
+            margin: 30px 0 10px;
+            @media (max-width: 1300px) {
+              margin-top: adaptive-value(30, 15);
+            }
+          }
+
+          .views-field-price__number {
+            @include font-setting(normal, 700, 22px, 26px);
+            @media (max-width: 1300px) {
+              font-size: adaptive-value(22, 18);
+              line-height: adaptive-value(26, 22);
+            }
+            color: $link-price;
+          }
+        }
+
+        &:nth-child(odd) {
+          .views-row {
+            padding-bottom: 70px;
+            @media (max-width: 1300px) {
+              padding-bottom: adaptive-value(70, 40);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .most-popular {
+    .view-content {
+      .slick-list {
+        .slick-slide {
+          &:nth-child(odd) {
+            .views-row {
+              padding-bottom: 20px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

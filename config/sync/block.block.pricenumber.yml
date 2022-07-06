@@ -1,0 +1,33 @@
+uuid: b245797b-4fdc-47bf-92ac-9f05dfed9750
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.price_number
+  module:
+    - block_class
+    - facets
+    - system
+  theme:
+    - hd_theme
+third_party_settings:
+  block_class:
+    classes: filter-price
+id: pricenumber
+theme: hd_theme
+region: left_sitebar
+weight: -7
+provider: null
+plugin: 'facet_block:price_number'
+settings:
+  id: 'facet_block:price_number'
+  label: Price
+  label_display: visible
+  provider: facets
+  context_mapping: {  }
+  block_id: pricenumber
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /shop

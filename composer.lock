@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "5faea215c09ed9f3e4e23e06a2698123",
+    "content-hash": "ae1bb654de2403e7166525cba9f3971c",
     "packages": [
         {
             "name": "ajgl/breakpoint-twig-extension",
@@ -181,27 +181,28 @@
         },
         {
             "name": "commerceguys/addressing",
-            "version": "v1.2.2",
+            "version": "v1.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/commerceguys/addressing.git",
-                "reference": "fb98dfc72f8a3d12fac55f69ab2477a0fbfa9860"
+                "reference": "566febd56ca71e31dd383b014c4e1bec680507bf"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/commerceguys/addressing/zipball/fb98dfc72f8a3d12fac55f69ab2477a0fbfa9860",
-                "reference": "fb98dfc72f8a3d12fac55f69ab2477a0fbfa9860",
+                "url": "https://api.github.com/repos/commerceguys/addressing/zipball/566febd56ca71e31dd383b014c4e1bec680507bf",
+                "reference": "566febd56ca71e31dd383b014c4e1bec680507bf",
                 "shasum": ""
             },
             "require": {
                 "doctrine/collections": "~1.0",
-                "php": ">=7.1.3"
+                "php": ">=7.3"
             },
             "require-dev": {
+                "ext-json": "*",
                 "mikey179/vfsstream": "1.*",
-                "phpunit/phpunit": "^7.5",
+                "phpunit/phpunit": "^9.5",
                 "squizlabs/php_codesniffer": "3.*",
-                "symfony/validator": "^4.4"
+                "symfony/validator": "^4.4 || ^5.4"
             },
             "suggest": {
                 "symfony/validator": "to validate addresses"
@@ -238,9 +239,9 @@
             ],
             "support": {
                 "issues": "https://github.com/commerceguys/addressing/issues",
-                "source": "https://github.com/commerceguys/addressing/tree/v1.2.2"
+                "source": "https://github.com/commerceguys/addressing/tree/v1.3.0"
             },
-            "time": "2021-10-30T12:33:41+00:00"
+            "time": "2022-04-08T13:06:51+00:00"
         },
         {
             "name": "commerceguys/intl",
@@ -524,22 +525,22 @@
         },
         {
             "name": "consolidation/annotated-command",
-            "version": "4.5.1",
+            "version": "4.5.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/consolidation/annotated-command.git",
-                "reference": "701a7abe8505abe89520837be798e15a3953a367"
+                "reference": "67cea8e8e7656b74da651ea6f49321853996c0fd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/consolidation/annotated-command/zipball/701a7abe8505abe89520837be798e15a3953a367",
-                "reference": "701a7abe8505abe89520837be798e15a3953a367",
+                "url": "https://api.github.com/repos/consolidation/annotated-command/zipball/67cea8e8e7656b74da651ea6f49321853996c0fd",
+                "reference": "67cea8e8e7656b74da651ea6f49321853996c0fd",
                 "shasum": ""
             },
             "require": {
                 "consolidation/output-formatters": "^4.1.1",
                 "php": ">=7.1.3",
-                "psr/log": "^1|^2",
+                "psr/log": "^1|^2|^3",
                 "symfony/console": "^4.4.8|^5|^6",
                 "symfony/event-dispatcher": "^4.4.8|^5|^6",
                 "symfony/finder": "^4.4.8|^5|^6"
@@ -574,9 +575,9 @@
             "description": "Initialize Symfony Console commands from annotated command class methods.",
             "support": {
                 "issues": "https://github.com/consolidation/annotated-command/issues",
-                "source": "https://github.com/consolidation/annotated-command/tree/4.5.1"
+                "source": "https://github.com/consolidation/annotated-command/tree/4.5.5"
             },
-            "time": "2021-12-30T04:00:37+00:00"
+            "time": "2022-04-26T16:18:25+00:00"
         },
         {
             "name": "consolidation/config",
@@ -735,21 +736,21 @@
         },
         {
             "name": "consolidation/log",
-            "version": "2.1.0",
+            "version": "2.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/consolidation/log.git",
-                "reference": "9efdd57031bf2fda033f6a256cd8b7902a4e6b92"
+                "reference": "3ad08dc57e8aff9400111bad36beb0ed387fe6a9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/consolidation/log/zipball/9efdd57031bf2fda033f6a256cd8b7902a4e6b92",
-                "reference": "9efdd57031bf2fda033f6a256cd8b7902a4e6b92",
+                "url": "https://api.github.com/repos/consolidation/log/zipball/3ad08dc57e8aff9400111bad36beb0ed387fe6a9",
+                "reference": "3ad08dc57e8aff9400111bad36beb0ed387fe6a9",
                 "shasum": ""
             },
             "require": {
                 "php": ">=7.1.3",
-                "psr/log": "^1.0",
+                "psr/log": "^1 || ^2",
                 "symfony/console": "^4 || ^5 || ^6"
             },
             "require-dev": {
@@ -781,26 +782,26 @@
             "description": "Improved Psr-3 / Psr\\Log logger based on Symfony Console components.",
             "support": {
                 "issues": "https://github.com/consolidation/log/issues",
-                "source": "https://github.com/consolidation/log/tree/2.1.0"
+                "source": "https://github.com/consolidation/log/tree/2.1.1"
             },
-            "time": "2022-01-30T03:49:07+00:00"
+            "time": "2022-02-24T04:27:32+00:00"
         },
         {
             "name": "consolidation/output-formatters",
-            "version": "4.2.1",
+            "version": "4.2.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/consolidation/output-formatters.git",
-                "reference": "4413d7c732afb5d7bdac565c41aa9c8c49c48888"
+                "reference": "d57992bf81ead908ee21cd94b46ed65afa2e785b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/consolidation/output-formatters/zipball/4413d7c732afb5d7bdac565c41aa9c8c49c48888",
-                "reference": "4413d7c732afb5d7bdac565c41aa9c8c49c48888",
+                "url": "https://api.github.com/repos/consolidation/output-formatters/zipball/d57992bf81ead908ee21cd94b46ed65afa2e785b",
+                "reference": "d57992bf81ead908ee21cd94b46ed65afa2e785b",
                 "shasum": ""
             },
             "require": {
-                "dflydev/dot-access-data": "^1.1.0",
+                "dflydev/dot-access-data": "^1.1.0 || ^2 || ^3",
                 "php": ">=7.1.3",
                 "symfony/console": "^4|^5|^6",
                 "symfony/finder": "^4|^5|^6"
@@ -840,22 +841,22 @@
             "description": "Format text by applying transformations provided by plug-in formatters.",
             "support": {
                 "issues": "https://github.com/consolidation/output-formatters/issues",
-                "source": "https://github.com/consolidation/output-formatters/tree/4.2.1"
+                "source": "https://github.com/consolidation/output-formatters/tree/4.2.2"
             },
-            "time": "2021-12-30T03:58:00+00:00"
+            "time": "2022-02-13T15:28:30+00:00"
         },
         {
             "name": "consolidation/robo",
-            "version": "3.0.7",
+            "version": "3.0.10",
             "source": {
                 "type": "git",
                 "url": "https://github.com/consolidation/robo.git",
-                "reference": "57012db2a93c904ed0a7b9d8676c0325c0366bc8"
+                "reference": "206bbe23b34081a36bfefc4de2abbc1abcd29ef4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/consolidation/robo/zipball/57012db2a93c904ed0a7b9d8676c0325c0366bc8",
-                "reference": "57012db2a93c904ed0a7b9d8676c0325c0366bc8",
+                "url": "https://api.github.com/repos/consolidation/robo/zipball/206bbe23b34081a36bfefc4de2abbc1abcd29ef4",
+                "reference": "206bbe23b34081a36bfefc4de2abbc1abcd29ef4",
                 "shasum": ""
             },
             "require": {
@@ -864,13 +865,13 @@
                 "consolidation/log": "^1.1.1 || ^2.0.2",
                 "consolidation/output-formatters": "^4.1.2",
                 "consolidation/self-update": "^2.0",
-                "league/container": "^3.3.1",
+                "league/container": "^3.3.1 || ^4.0",
                 "php": ">=7.1.3",
                 "symfony/console": "^4.4.19 || ^5 || ^6",
                 "symfony/event-dispatcher": "^4.4.19 || ^5 || ^6",
                 "symfony/filesystem": "^4.4.9 || ^5 || ^6",
                 "symfony/finder": "^4.4.9 || ^5 || ^6",
-                "symfony/process": "^4.4.9 || ^5",
+                "symfony/process": "^4.4.9 || ^5 || ^6",
                 "symfony/yaml": "^4.4 || ^5 || ^6"
             },
             "conflict": {
@@ -939,22 +940,22 @@
             "description": "Modern task runner",
             "support": {
                 "issues": "https://github.com/consolidation/robo/issues",
-                "source": "https://github.com/consolidation/robo/tree/3.0.7"
+                "source": "https://github.com/consolidation/robo/tree/3.0.10"
             },
-            "time": "2021-12-31T01:01:31+00:00"
+            "time": "2022-02-21T17:19:14+00:00"
         },
         {
             "name": "consolidation/self-update",
-            "version": "2.0.3",
+            "version": "2.0.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/consolidation/self-update.git",
-                "reference": "117dcc9494dc970a6ae307103c41d654e6253bc4"
+                "reference": "8a64bdd8daf5faa8e85f56534dd99caf928164b3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/consolidation/self-update/zipball/117dcc9494dc970a6ae307103c41d654e6253bc4",
-                "reference": "117dcc9494dc970a6ae307103c41d654e6253bc4",
+                "url": "https://api.github.com/repos/consolidation/self-update/zipball/8a64bdd8daf5faa8e85f56534dd99caf928164b3",
+                "reference": "8a64bdd8daf5faa8e85f56534dd99caf928164b3",
                 "shasum": ""
             },
             "require": {
@@ -994,28 +995,28 @@
             "description": "Provides a self:update command for Symfony Console applications.",
             "support": {
                 "issues": "https://github.com/consolidation/self-update/issues",
-                "source": "https://github.com/consolidation/self-update/tree/2.0.3"
+                "source": "https://github.com/consolidation/self-update/tree/2.0.5"
             },
-            "time": "2021-12-30T19:08:32+00:00"
+            "time": "2022-02-09T22:44:24+00:00"
         },
         {
             "name": "consolidation/site-alias",
-            "version": "3.1.3",
+            "version": "3.1.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/consolidation/site-alias.git",
-                "reference": "e2784362e98f315c996fb2b9ed80a9118a0ba8b7"
+                "reference": "ef2eb7d37e59b3d837b4556d4d8070cb345b378c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/consolidation/site-alias/zipball/e2784362e98f315c996fb2b9ed80a9118a0ba8b7",
-                "reference": "e2784362e98f315c996fb2b9ed80a9118a0ba8b7",
+                "url": "https://api.github.com/repos/consolidation/site-alias/zipball/ef2eb7d37e59b3d837b4556d4d8070cb345b378c",
+                "reference": "ef2eb7d37e59b3d837b4556d4d8070cb345b378c",
                 "shasum": ""
             },
             "require": {
-                "consolidation/config": "^1.2.1|^2",
+                "consolidation/config": "^1.2.1 || ^2",
                 "php": ">=5.5.0",
-                "symfony/finder": "~2.3|^3|^4.4|^5"
+                "symfony/finder": "~2.3 || ^3 || ^4.4 || ^5 || ^6"
             },
             "require-dev": {
                 "php-coveralls/php-coveralls": "^2.4.2",
@@ -1052,22 +1053,22 @@
             "description": "Manage alias records for local and remote sites.",
             "support": {
                 "issues": "https://github.com/consolidation/site-alias/issues",
-                "source": "https://github.com/consolidation/site-alias/tree/3.1.3"
+                "source": "https://github.com/consolidation/site-alias/tree/3.1.5"
             },
-            "time": "2022-01-03T19:00:28+00:00"
+            "time": "2022-02-23T23:59:18+00:00"
         },
         {
             "name": "consolidation/site-process",
-            "version": "4.1.3",
+            "version": "4.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/consolidation/site-process.git",
-                "reference": "ca41dc82b280bccdf1b231d5599c7d506fba5c04"
+                "reference": "9ef08d471573d6a56405b06ef6830dd70c883072"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/consolidation/site-process/zipball/ca41dc82b280bccdf1b231d5599c7d506fba5c04",
-                "reference": "ca41dc82b280bccdf1b231d5599c7d506fba5c04",
+                "url": "https://api.github.com/repos/consolidation/site-process/zipball/9ef08d471573d6a56405b06ef6830dd70c883072",
+                "reference": "9ef08d471573d6a56405b06ef6830dd70c883072",
                 "shasum": ""
             },
             "require": {
@@ -1110,9 +1111,9 @@
             "description": "A thin wrapper around the Symfony Process Component that allows applications to use the Site Alias library to specify the target for a remote call.",
             "support": {
                 "issues": "https://github.com/consolidation/site-process/issues",
-                "source": "https://github.com/consolidation/site-process/tree/4.1.3"
+                "source": "https://github.com/consolidation/site-process/tree/4.2.0"
             },
-            "time": "2022-01-18T23:04:54+00:00"
+            "time": "2022-02-19T04:09:55+00:00"
         },
         {
             "name": "cweagans/composer-patches",
@@ -2047,7 +2048,7 @@
             "extra": {
                 "drupal": {
                     "version": "8.x-1.10",
-                    "datestamp": "1643715177",
+                    "datestamp": "1643715226",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -2118,7 +2119,7 @@
             "extra": {
                 "drupal": {
                     "version": "3.1.0",
-                    "datestamp": "1643097060",
+                    "datestamp": "1643742891",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -2342,17 +2343,17 @@
         },
         {
             "name": "drupal/bootstrap",
-            "version": "3.23.0",
+            "version": "3.24.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/bootstrap.git",
-                "reference": "8.x-3.23"
+                "reference": "8.x-3.24"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/bootstrap-8.x-3.23.zip",
-                "reference": "8.x-3.23",
-                "shasum": "9849be667cc678a91ad29f77c2baea2cf16878bc"
+                "url": "https://ftp.drupal.org/files/projects/bootstrap-8.x-3.24.zip",
+                "reference": "8.x-3.24",
+                "shasum": "112e9925fd6d694f41b388a81748d1175c776969"
             },
             "require": {
                 "drupal/core": "^8 || ^9"
@@ -2360,8 +2361,8 @@
             "type": "drupal-theme",
             "extra": {
                 "drupal": {
-                    "version": "8.x-3.23",
-                    "datestamp": "1592175762",
+                    "version": "8.x-3.24",
+                    "datestamp": "1648749397",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -2459,17 +2460,17 @@
         },
         {
             "name": "drupal/commerce",
-            "version": "2.29.0",
+            "version": "2.30.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/commerce.git",
-                "reference": "8.x-2.29"
+                "reference": "8.x-2.30"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/commerce-8.x-2.29.zip",
-                "reference": "8.x-2.29",
-                "shasum": "189145431fb4e196b3286c96cae8d7764b8fe7bb"
+                "url": "https://ftp.drupal.org/files/projects/commerce-8.x-2.30.zip",
+                "reference": "8.x-2.30",
+                "shasum": "45cf6a7e09b0aa318f3dce063254c1a8ed503e60"
             },
             "require": {
                 "commerceguys/intl": "^1.0.0",
@@ -2504,8 +2505,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-2.29",
-                    "datestamp": "1643900314",
+                    "version": "8.x-2.30",
+                    "datestamp": "1649341535",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -3521,17 +3522,17 @@
         },
         {
             "name": "drupal/inline_entity_form",
-            "version": "1.0.0-rc10",
+            "version": "1.0.0-rc11",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/inline_entity_form.git",
-                "reference": "8.x-1.0-rc10"
+                "reference": "8.x-1.0-rc11"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/inline_entity_form-8.x-1.0-rc10.zip",
-                "reference": "8.x-1.0-rc10",
-                "shasum": "e10a90cee004e13b4c59991a312f805834a35750"
+                "url": "https://ftp.drupal.org/files/projects/inline_entity_form-8.x-1.0-rc11.zip",
+                "reference": "8.x-1.0-rc11",
+                "shasum": "67a92ec1482be19b2f2091ca9498f585e34072b9"
             },
             "require": {
                 "drupal/core": "^8.8 || ^9",
@@ -3543,8 +3544,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-1.0-rc10",
-                    "datestamp": "1646314907",
+                    "version": "8.x-1.0-rc11",
+                    "datestamp": "1648748863",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "RC releases are not covered by Drupal security advisories."
@@ -4382,6 +4383,57 @@
             }
         },
         {
+            "name": "drupal/svg_image",
+            "version": "1.16.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/svg_image.git",
+                "reference": "8.x-1.16"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/svg_image-8.x-1.16.zip",
+                "reference": "8.x-1.16",
+                "shasum": "e29b6fff49aacfaf81e58059b09551b45325f633"
+            },
+            "require": {
+                "drupal/core": "^8 || ^9",
+                "enshrined/svg-sanitize": ">=0.15 <1.0"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-1.16",
+                    "datestamp": "1647314248",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Yaroslav Lushnikov",
+                    "homepage": "https://www.drupal.org/user/2870933",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "See contributors",
+                    "homepage": "https://www.drupal.org/node/2887125/committers"
+                }
+            ],
+            "description": "Overrides the standard image formatter and widget to support SVG files.",
+            "homepage": "http://drupal.org/project/svg_image",
+            "support": {
+                "source": "http://cgit.drupalcode.org/svg_image",
+                "issues": "http://drupal.org/project/svg_image"
+            }
+        },
+        {
             "name": "drupal/themable_forms",
             "version": "1.0.0-beta2",
             "source": {
@@ -5008,30 +5060,30 @@
         },
         {
             "name": "enlightn/security-checker",
-            "version": "v1.9.0",
+            "version": "v1.10.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/enlightn/security-checker.git",
-                "reference": "dc5bce653fa4d9c792e9dcffa728c0642847c1e1"
+                "reference": "196bacc76e7a72a63d0e1220926dbb190272db97"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/enlightn/security-checker/zipball/dc5bce653fa4d9c792e9dcffa728c0642847c1e1",
-                "reference": "dc5bce653fa4d9c792e9dcffa728c0642847c1e1",
+                "url": "https://api.github.com/repos/enlightn/security-checker/zipball/196bacc76e7a72a63d0e1220926dbb190272db97",
+                "reference": "196bacc76e7a72a63d0e1220926dbb190272db97",
                 "shasum": ""
             },
             "require": {
                 "ext-json": "*",
                 "guzzlehttp/guzzle": "^6.3|^7.0",
                 "php": ">=5.6",
-                "symfony/console": "^3.4|^4|^5",
-                "symfony/finder": "^3|^4|^5",
-                "symfony/process": "^3.4|^4|^5",
-                "symfony/yaml": "^3.4|^4|^5"
+                "symfony/console": "^3.4|^4|^5|^6",
+                "symfony/finder": "^3|^4|^5|^6",
+                "symfony/process": "^3.4|^4|^5|^6",
+                "symfony/yaml": "^3.4|^4|^5|^6"
             },
             "require-dev": {
                 "ext-zip": "*",
-                "friendsofphp/php-cs-fixer": "^2.18",
+                "friendsofphp/php-cs-fixer": "^2.18|^3.0",
                 "phpunit/phpunit": "^5.5|^6|^7|^8|^9"
             },
             "bin": [
@@ -5068,9 +5120,54 @@
             ],
             "support": {
                 "issues": "https://github.com/enlightn/security-checker/issues",
-                "source": "https://github.com/enlightn/security-checker/tree/v1.9.0"
+                "source": "https://github.com/enlightn/security-checker/tree/v1.10.0"
             },
-            "time": "2021-05-06T09:03:35+00:00"
+            "time": "2022-02-21T22:40:16+00:00"
+        },
+        {
+            "name": "enshrined/svg-sanitize",
+            "version": "0.15.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/darylldoyle/svg-sanitizer.git",
+                "reference": "e50b83a2f1f296ca61394fe88fbfe3e896a84cf4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/darylldoyle/svg-sanitizer/zipball/e50b83a2f1f296ca61394fe88fbfe3e896a84cf4",
+                "reference": "e50b83a2f1f296ca61394fe88fbfe3e896a84cf4",
+                "shasum": ""
+            },
+            "require": {
+                "ext-dom": "*",
+                "ext-libxml": "*",
+                "php": "^7.0 || ^8.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^6.5 || ^8.5"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "enshrined\\svgSanitize\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Daryll Doyle",
+                    "email": "daryll@enshrined.co.uk"
+                }
+            ],
+            "description": "An SVG sanitizer for PHP",
+            "support": {
+                "issues": "https://github.com/darylldoyle/svg-sanitizer/issues",
+                "source": "https://github.com/darylldoyle/svg-sanitizer/tree/0.15.4"
+            },
+            "time": "2022-02-21T09:13:59+00:00"
         },
         {
             "name": "fancyapps/fancybox",

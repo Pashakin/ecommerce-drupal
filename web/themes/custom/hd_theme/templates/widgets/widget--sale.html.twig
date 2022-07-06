@@ -1,15 +1,13 @@
 <div{{ attributes.addClass('widget widget-sale') }}>
   {% if content %}
-    <div class="widget-wrapper container">
-      <div class="widget-wrapper__left">
-      <a href="{{ content.field_link.0['#url'] }}">
+    <a href="{{ content.field_link.0['#url'] }}" class="widget-sale__link">
+      <div class="widget-sale__left">
         {{ content.field_image }}
-      </a>
-    </div>
-      <div class="widget-wrapper__right">
-      {{ content.field_text }}
-      {{ content.field_sale }}
-    </div>
-    </div>
+      </div>
+      <div class="widget-sale__right">
+        {{ content.field_text }}
+        {{ content.field_sale }}
+      </div>
+    </a>
   {% endif %}
 </div>

@@ -5,10 +5,13 @@ dependencies:
   config:
     - commerce_product.commerce_product_type.sofa
     - field.field.commerce_product.sofa.body
+    - field.field.commerce_product.sofa.field_image
     - field.field.commerce_product.sofa.field_similar_products
     - field.field.commerce_product.sofa.field_tabs
+    - image.style.thumbnail
   module:
     - commerce
+    - image
     - paragraphs
     - path
     - text
@@ -19,7 +22,7 @@ mode: default
 content:
   body:
     type: text_textarea_with_summary
-    weight: 2
+    weight: 3
     region: content
     settings:
       rows: 9
@@ -29,13 +32,21 @@ content:
     third_party_settings: {  }
   created:
     type: datetime_timestamp
-    weight: 5
+    weight: 6
     region: content
     settings: {  }
     third_party_settings: {  }
+  field_image:
+    type: image_image
+    weight: 9
+    region: content
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
   field_similar_products:
     type: entity_reference_autocomplete
-    weight: 11
+    weight: 10
     region: content
     settings:
       match_operator: CONTAINS
@@ -45,7 +56,7 @@ content:
     third_party_settings: {  }
   field_tabs:
     type: paragraphs
-    weight: 3
+    weight: 4
     region: content
     settings:
       title: Paragraph
@@ -70,13 +81,13 @@ content:
     third_party_settings: {  }
   path:
     type: path
-    weight: 6
+    weight: 7
     region: content
     settings: {  }
     third_party_settings: {  }
   status:
     type: boolean_checkbox
-    weight: 7
+    weight: 8
     region: content
     settings:
       display_label: true
@@ -101,7 +112,7 @@ content:
     third_party_settings: {  }
   uid:
     type: entity_reference_autocomplete
-    weight: 4
+    weight: 5
     region: content
     settings:
       match_operator: CONTAINS

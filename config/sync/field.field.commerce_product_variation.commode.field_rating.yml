@@ -1,0 +1,24 @@
+uuid: 0f2eea9e-eb92-4488-8f32-f2d4a4aadb89
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_variation_type.commode
+    - field.storage.commerce_product_variation.field_rating
+  module:
+    - starrating
+id: commerce_product_variation.commode.field_rating
+field_name: field_rating
+entity_type: commerce_product_variation
+bundle: commode
+label: Rating
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: '4'
+default_value_callback: ''
+settings:
+  max_value: '5'
+field_type: starrating
