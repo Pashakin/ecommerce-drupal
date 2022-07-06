@@ -1,0 +1,37 @@
+uuid: 0fa9112d-21af-4810-b4c5-cc636604021d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.image_and_description.field_feature_copy
+    - field.field.paragraph.image_and_description.field_illustration
+    - paragraphs.paragraphs_type.image_and_description
+  module:
+    - svg_image
+id: paragraph.image_and_description.default
+targetEntityType: paragraph
+bundle: image_and_description
+mode: default
+content:
+  field_feature_copy:
+    type: basic_string
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_illustration:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: ''
+      svg_attributes:
+        width: null
+        height: null
+      svg_render_as_image: true
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  search_api_excerpt: true

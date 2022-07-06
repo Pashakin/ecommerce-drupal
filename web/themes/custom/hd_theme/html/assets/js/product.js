@@ -1,7 +1,7 @@
 (function ($, Drupal, once) {
   Drupal.behaviors.productSliderBehavior = {
     attach: function (context, settings) {
-      $(".product__images .slider-for .product-slider").once().slick({});
+      $(".product__images .slider-for .product-slider").once().slick();
       $(".product__images .slider-nav .product-slider").once().slick({
         asNavFor: ".product__images .slider-for .product-slider",
         slidesToShow: 4,
@@ -39,38 +39,6 @@
       Fancybox.bind(".slider-for .slick-slide img", {
         // Your options go here
       });
-    },
-  };
-
-  Drupal.behaviors.mostPopularSliderBehavior = {
-    attach: function (context, settings) {
-      $(".most-popular .view-content")
-        .once()
-        .slick({
-          slidesToShow: 4,
-          slidesToScroll: 1,
-          // variableWidth: true,
-          responsive: [
-            {
-              breakpoint: 992,
-              settings: {
-                slidesToShow: 3,
-              },
-            },
-            {
-              breakpoint: 768,
-              settings: {
-                slidesToShow: 2,
-              },
-            },
-            {
-              breakpoint: 576,
-              settings: {
-                slidesToShow: 1,
-              },
-            },
-          ],
-        });
     },
   };
 })(jQuery, Drupal, once);

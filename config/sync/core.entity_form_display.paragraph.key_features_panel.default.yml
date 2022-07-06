@@ -1,0 +1,82 @@
+uuid: 132d0f44-0aa6-4d40-a3fa-f2bfcb336ee7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.key_features_panel.field_background
+    - field.field.paragraph.key_features_panel.field_feature_title
+    - field.field.paragraph.key_features_panel.field_image_and_description
+    - field.field.paragraph.key_features_panel.field_primary_cta
+    - field.field.paragraph.key_features_panel.field_text_and_link
+    - paragraphs.paragraphs_type.key_features_panel
+  module:
+    - color_field
+    - link
+    - paragraphs
+id: paragraph.key_features_panel.default
+targetEntityType: paragraph
+bundle: key_features_panel
+mode: default
+content:
+  field_background:
+    type: color_field_widget_box
+    weight: 6
+    region: content
+    settings:
+      default_colors: '#f9f8f5,#842c68,#f29129,#00c7ac'
+    third_party_settings: {  }
+  field_feature_title:
+    type: string_textarea
+    weight: 0
+    region: content
+    settings:
+      rows: 2
+      placeholder: ''
+    third_party_settings: {  }
+  field_image_and_description:
+    type: paragraphs
+    weight: 1
+    region: content
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      closed_mode: summary
+      autocollapse: none
+      closed_mode_threshold: 0
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+      features:
+        collapse_edit_all: collapse_edit_all
+        duplicate: duplicate
+    third_party_settings: {  }
+  field_primary_cta:
+    type: link_default
+    weight: 2
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+  field_text_and_link:
+    type: paragraphs
+    weight: 5
+    region: content
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      closed_mode: summary
+      autocollapse: none
+      closed_mode_threshold: 0
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+      features:
+        collapse_edit_all: collapse_edit_all
+        duplicate: duplicate
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

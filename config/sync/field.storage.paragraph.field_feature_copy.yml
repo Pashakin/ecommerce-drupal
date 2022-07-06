@@ -1,0 +1,19 @@
+uuid: 26fe6065-2f1b-4487-9539-0d3c74e0a64d
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+id: paragraph.field_feature_copy
+field_name: field_feature_copy
+entity_type: paragraph
+type: string_long
+settings:
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

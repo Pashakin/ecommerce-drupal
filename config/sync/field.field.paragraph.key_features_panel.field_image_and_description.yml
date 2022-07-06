@@ -1,0 +1,43 @@
+uuid: ef3163ef-8e71-4638-9d7f-c40e0bba099c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_image_and_description
+    - paragraphs.paragraphs_type.image_and_description
+    - paragraphs.paragraphs_type.key_features_panel
+  module:
+    - entity_reference_revisions
+id: paragraph.key_features_panel.field_image_and_description
+field_name: field_image_and_description
+entity_type: paragraph
+bundle: key_features_panel
+label: 'Image and description'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      image_and_description: image_and_description
+    negate: 0
+    target_bundles_drag_drop:
+      image_and_description:
+        weight: -8
+        enabled: true
+      inspiration:
+        weight: -11
+        enabled: false
+      key_features_panel:
+        weight: -9
+        enabled: false
+      product_tabs:
+        weight: -10
+        enabled: false
+      text_and_link:
+        weight: -7
+        enabled: false
+field_type: entity_reference_revisions

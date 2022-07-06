@@ -1,0 +1,10 @@
+uuid: b215f06b-e30e-4d0b-b1a5-726d7a0c417d
+langcode: en
+status: true
+dependencies: {  }
+id: key_features_panel
+label: 'Key features panel'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

@@ -10,6 +10,14 @@
     height: auto;
   }
 
+  .views-row {
+    margin-bottom: 32px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
   &__item {
     display: grid;
     grid-template-columns: repeat(2, 1fr);

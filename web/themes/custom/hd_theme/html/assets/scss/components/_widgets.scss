@@ -147,9 +147,9 @@
   .view-content {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 0 40px;
+    gap: 40px;
     @media (max-width: 1300px) {
-      gap: 0 adaptive-value(40, 15);
+      gap: adaptive-value(40, 15);
     }
 
     .views-field-title {
@@ -172,6 +172,14 @@
   .new-in-store {
     .view-content {
       grid-template-columns: 1fr 1fr;
+    }
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .new-in-store {
+    .view-content {
+      grid-template-columns: 1fr;
     }
   }
 }
